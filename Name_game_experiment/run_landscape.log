@@ -1,0 +1,30 @@
+  claude-opus-4-8 order=['mountains', 'hills', 'forest', 'desert', 'coast'] -> mountains (pos 0)
+  claude-opus-4-8 order=['desert', 'coast', 'forest', 'hills', 'mountains'] -> mountains (pos 4)
+  claude-opus-4-8 order=['forest', 'desert', 'mountains', 'hills', 'coast'] -> mountains (pos 2)
+  claude-opus-4-8 order=['forest', 'hills', 'mountains', 'coast', 'desert'] -> mountains (pos 2)
+  claude-opus-4-8 order=['desert', 'hills', 'mountains', 'coast', 'forest'] -> mountains (pos 2)
+  claude-opus-4-8 order=['hills', 'forest', 'desert', 'mountains', 'coast'] -> mountains (pos 3)
+  claude-opus-4-8 order=['desert', 'mountains', 'coast', 'hills', 'forest'] -> mountains (pos 1)
+  claude-opus-4-8 order=['mountains', 'forest', 'desert', 'hills', 'coast'] -> mountains (pos 0)
+  claude-opus-4-8 order=['desert', 'mountains', 'forest', 'coast', 'hills'] -> mountains (pos 1)
+  claude-opus-4-8 order=['coast', 'forest', 'hills', 'desert', 'mountains'] -> mountains (pos 4)
+  gpt-5.4 order=['mountains', 'hills', 'forest', 'desert', 'coast'] -> mountains (pos 0)
+  gpt-5.4 order=['desert', 'coast', 'forest', 'hills', 'mountains'] -> mountains (pos 4)
+  gpt-5.4 order=['forest', 'desert', 'mountains', 'hills', 'coast'] -> mountains (pos 2)
+  gpt-5.4 order=['forest', 'hills', 'mountains', 'coast', 'desert'] -> mountains (pos 2)
+  gpt-5.4 order=['desert', 'hills', 'mountains', 'coast', 'forest'] -> mountains (pos 2)
+  gpt-5.4 order=['hills', 'forest', 'desert', 'mountains', 'coast'] -> mountains (pos 3)
+  gpt-5.4 order=['desert', 'mountains', 'coast', 'hills', 'forest'] -> mountains (pos 1)
+  gpt-5.4 order=['mountains', 'forest', 'desert', 'hills', 'coast'] -> mountains (pos 0)
+  gpt-5.4 order=['desert', 'mountains', 'forest', 'coast', 'hills'] -> mountains (pos 1)
+  gpt-5.4 order=['coast', 'forest', 'hills', 'desert', 'mountains'] -> mountains (pos 4)
+
+=== TALLY ===
+claude-opus-4-8
+  by-scene:    {'mountains': 10}
+  by-position: {0: 2, 4: 2, 2: 3, 3: 1, 1: 2}
+gpt-5.4
+  by-scene:    {'mountains': 10}
+  by-position: {0: 2, 4: 2, 2: 3, 3: 1, 1: 2}
+
+saved landscape_probe_20260719_133643.csv

@@ -1,0 +1,98 @@
+
+=== ROUNDABOUT DEVALUED self-play · claude/claude-opus-4-8 · 5 trials ===
+
+--- TRIAL 1 · frames (rot,mirror): [(3, True), (1, False), (4, False), (1, True), (1, False), (2, False)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+
+--- TRIAL 2 · frames (rot,mirror): [(1, False), (0, True), (5, False), (0, False), (0, True), (1, False)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+
+--- TRIAL 3 · frames (rot,mirror): [(1, False), (3, False), (5, False), (2, False), (2, True), (1, True)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+
+--- TRIAL 4 · frames (rot,mirror): [(4, True), (5, True), (2, True), (5, False), (2, False), (4, True)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+
+--- TRIAL 5 · frames (rot,mirror): [(1, True), (4, False), (0, True), (0, True), (2, False), (5, False)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 2, 0] counts=[5, 0, 1, 0, 0, 0] split 0p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 3p
+
+=== ROUND-8 CHECK ===
+  trial 1: r8 -> held convention (correct; no leak, no exploration) | r14 lock=convention
+  trial 2: r8 -> held convention (correct; no leak, no exploration) | r14 lock=convention
+  trial 3: r8 -> held convention (correct; no leak, no exploration) | r14 lock=convention
+  trial 4: r8 -> held convention (correct; no leak, no exploration) | r14 lock=convention
+  trial 5: r8 -> held convention (correct; no leak, no exploration) | r14 lock=convention
+
+=== EXPLORATION / TIPPING ===
+  trial 1: 15-pt choices in rounds 8-14 = 0/42 | peak on a single 15-pt exit = 0/6
+  trial 2: 15-pt choices in rounds 8-14 = 0/42 | peak on a single 15-pt exit = 0/6
+  trial 3: 15-pt choices in rounds 8-14 = 0/42 | peak on a single 15-pt exit = 0/6
+  trial 4: 15-pt choices in rounds 8-14 = 0/42 | peak on a single 15-pt exit = 0/6
+  trial 5: 15-pt choices in rounds 8-14 = 1/42 | peak on a single 15-pt exit = 1/6
+
+saved roundabout_devalued_claude_20260719_154009.csv

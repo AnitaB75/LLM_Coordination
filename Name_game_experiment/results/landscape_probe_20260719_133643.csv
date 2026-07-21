@@ -1,0 +1,21 @@
+model,order,chosen,position,reasoning
+claude-opus-4-8,mountains|hills|forest|desert|coast,mountains,0,The leftmost scene is the natural default focal point for identical reasoners.  CHOICE: mountains
+claude-opus-4-8,desert|coast|forest|hills|mountains,mountains,4,"The mountain is the most visually distinctive and memorable scene, making it a natural focal point for coordination.  CHOICE: mountains"
+claude-opus-4-8,forest|desert|mountains|hills|coast,mountains,2,"The mountain scene is the most visually striking and central, making it the natural focal point everyone would gravitate toward.  CHOICE: mountains"
+claude-opus-4-8,forest|hills|mountains|coast|desert,mountains,2,"The mountain is the most visually striking and central scene, making it the natural focal point everyone would gravitate toward.  CHOICE: mountains"
+claude-opus-4-8,desert|hills|mountains|coast|forest,mountains,2,"The mountain is the most visually striking and central scene, making it the natural Schelling point for coordination.  CHOICE: mountains"
+claude-opus-4-8,hills|forest|desert|mountains|coast,mountains,3,The mountain scene is the most visually striking and iconic Schelling point among landscapes.  CHOICE: mountains
+claude-opus-4-8,desert|mountains|coast|hills|forest,mountains,1,"The mountain scene is the most visually striking and central-feeling landmark, making it a natural focal point for coordination.  CHOICE: mountains"
+claude-opus-4-8,mountains|forest|desert|hills|coast,mountains,0,"The mountain is the most visually striking and naturally ""first"" scene, making it the obvious focal point for identical reasoners.  CHOICE: mountains"
+claude-opus-4-8,desert|mountains|forest|coast|hills,mountains,1,"The mountain scene is the most iconic and singular landmark, making it the natural focal point for coordination.  CHOICE: mountains"
+claude-opus-4-8,coast|forest|hills|desert|mountains,mountains,4,"The mountain scene is the most visually distinctive and iconic, making it the natural focal point that identical reasoners would converge on.  CHOICE: mountains"
+gpt-5.4,mountains|hills|forest|desert|coast,mountains,0,"The most visually salient and distinctive option is the snow-capped mountain, so it’s the best focal point for coordination. CHOICE: mountains"
+gpt-5.4,desert|coast|forest|hills|mountains,mountains,4,The mountain scene is the most visually distinctive and therefore the most likely focal choice for identical reasoners.   CHOICE: mountains
+gpt-5.4,forest|desert|mountains|hills|coast,mountains,2,The central snow-capped peak is the most distinctive and salient focal point for identical choosers. CHOICE: mountains
+gpt-5.4,forest|hills|mountains|coast|desert,mountains,2,The mountain scene is the most visually distinctive and therefore the most likely focal point for identical reasoners.   CHOICE: mountains
+gpt-5.4,desert|hills|mountains|coast|forest,mountains,2,"I pick the most visually distinctive and central scene, which identical reasoners are most likely to converge on. CHOICE: mountains"
+gpt-5.4,hills|forest|desert|mountains|coast,mountains,3,"I pick the most visually distinctive scene, since identical reasoners are likely to converge on the standout option.   CHOICE: mountains"
+gpt-5.4,desert|mountains|coast|hills|forest,mountains,1,"Mountains is the most visually distinctive and focal scene, so it’s the likeliest common choice. CHOICE: mountains"
+gpt-5.4,mountains|forest|desert|hills|coast,mountains,0,Mountains are the most visually distinctive and likely the most salient focal choice for identical reasoners. CHOICE: mountains
+gpt-5.4,desert|mountains|forest|coast|hills,mountains,1,"The mountains scene is the most distinctive and iconic, so it's the likeliest focal point for identical choosers.   CHOICE: mountains"
+gpt-5.4,coast|forest|hills|desert|mountains,mountains,4,The mountains scene is the most visually distinctive and thus the strongest focal point for independent coordination.   CHOICE: mountains

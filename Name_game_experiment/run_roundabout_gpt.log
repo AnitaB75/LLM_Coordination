@@ -1,0 +1,91 @@
+
+=== ROUNDABOUT self-play · gpt/gpt-5.4 · 5 trials ===
+
+--- TRIAL 1 · frames (rot,mirror): [(5, False), (0, True), (3, False), (5, False), (3, True), (2, True)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+
+--- TRIAL 2 · frames (rot,mirror): [(2, True), (5, False), (5, False), (5, True), (3, False), (1, True)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 4, 0, 0] counts=[5, 0, 0, 0, 1, 0] split 0p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+
+--- TRIAL 3 · frames (rot,mirror): [(5, False), (4, False), (4, True), (1, True), (5, False), (4, False)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+
+--- TRIAL 4 · frames (rot,mirror): [(2, True), (5, False), (5, True), (5, True), (4, True), (3, False)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+
+--- TRIAL 5 · frames (rot,mirror): [(0, False), (4, True), (2, True), (4, True), (2, True), (0, True)]
+   r 1: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 2: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 3: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 4: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 5: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 6: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 7: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r 8: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p  <-- ROUND 8
+   r 9: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r10: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r11: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r12: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r13: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+   r14: underlying=[0, 0, 0, 0, 0, 0] counts=[6, 0, 0, 0, 0, 0] MATCH 10p
+
+=== LEAK CHECK (round 8 should SCATTER) ===
+  trial 1: r8 distinct=1 INSTANT CONVERGE -> LEAK | r14 lock=convention
+  trial 2: r8 distinct=2 SCATTER (good) | r14 lock=convention
+  trial 3: r8 distinct=1 INSTANT CONVERGE -> LEAK | r14 lock=convention
+  trial 4: r8 distinct=1 INSTANT CONVERGE -> LEAK | r14 lock=convention
+  trial 5: r8 distinct=1 INSTANT CONVERGE -> LEAK | r14 lock=convention
+
+saved roundabout_selfplay_gpt_20260719_143635.csv

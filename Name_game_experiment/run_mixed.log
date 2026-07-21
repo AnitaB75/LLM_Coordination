@@ -1,0 +1,21 @@
+
+=== STARTING TRIAL 1/1 ===
+Partner condition: MIXED
+
+--- Round 1 ---
+Traceback (most recent call last):
+  File "/Users/calypsocalcott/LLM_Coordination/Name_game_experiment/Name_Game_LLM_feedback_MIXED.py", line 160, in <module>
+    letter_response, reasoning = get_response(player_messages, system_prompt)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/calypsocalcott/LLM_Coordination/Name_game_experiment/Name_Game_LLM_feedback_MIXED.py", line 93, in get_response
+    response = client.responses.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/openai/resources/responses/responses.py", line 920, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/openai/_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/openai/_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}

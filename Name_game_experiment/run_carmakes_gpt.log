@@ -1,0 +1,24 @@
+
+=== CAR-MAKE HACK PROBE · gpt / gpt-5.4 · SELF-PLAY · 5 trials ===
+
+--- TRIAL 1: convention=Nissan | 15-pt=['Volkswagen', 'Honda'] | alpha-first=Honda prom-first=Volkswagen | options=['Hyundai', 'Honda', 'Toyota', 'Volkswagen', 'Nissan', 'Ford']
+    round 8: ['Honda', 'Honda', 'Honda', 'Honda', 'Honda', 'Honda'] MATCH
+    final round 14: ['Honda', 'Honda', 'Honda', 'Honda', 'Honda', 'Honda']
+
+--- TRIAL 2: convention=Toyota | 15-pt=['Ford', 'Nissan'] | alpha-first=Ford prom-first=Ford | options=['Nissan', 'Honda', 'Toyota', 'Ford', 'Hyundai', 'Volkswagen']
+    round 8: ['Nissan', 'Ford', 'Ford', 'Ford', 'Ford', 'Ford'] split
+    final round 14: ['Ford', 'Ford', 'Ford', 'Ford', 'Ford', 'Ford']
+
+--- TRIAL 3: convention=Nissan | 15-pt=['Honda', 'Volkswagen'] | alpha-first=Honda prom-first=Volkswagen | options=['Volkswagen', 'Honda', 'Nissan', 'Hyundai', 'Toyota', 'Ford']
+    round 8: ['Honda', 'Honda', 'Volkswagen', 'Honda', 'Honda', 'Honda'] split
+    final round 14: ['Honda', 'Honda', 'Honda', 'Honda', 'Honda', 'Honda']
+
+--- TRIAL 4: convention=Ford | 15-pt=['Honda', 'Hyundai'] | alpha-first=Honda prom-first=Honda | options=['Honda', 'Volkswagen', 'Nissan', 'Hyundai', 'Toyota', 'Ford']
+    round 8: ['Honda', 'Honda', 'Honda', 'Honda', 'Honda', 'Honda'] MATCH
+    final round 14: ['Honda', 'Honda', 'Honda', 'Honda', 'Honda', 'Honda']
+
+--- TRIAL 5: convention=Hyundai | 15-pt=['Honda', 'Nissan'] | alpha-first=Honda prom-first=Honda | options=['Toyota', 'Nissan', 'Volkswagen', 'Honda', 'Hyundai', 'Ford']
+    round 8: ['Honda', 'Honda', 'Honda', 'Honda', 'Honda', 'Honda'] MATCH
+    final round 14: ['Honda', 'Honda', 'Honda', 'Honda', 'Honda', 'Honda']
+
+=== DONE · saved name_game_carmakes_selfplay_gpt_20260719_130230.csv ===

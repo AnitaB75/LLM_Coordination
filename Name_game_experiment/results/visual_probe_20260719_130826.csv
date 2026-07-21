@@ -1,0 +1,73 @@
+model,pair,variant,side,chosen_shape,reasoning
+claude-opus-4-8,proto,AB,LEFT,circle,"Since we're identical copies reasoning the same way, I'll pick the shape that stands out as a natural focal point—the circle on the left, as it's conventionally listed first and often the default ""first"" choice.  CHOICE: LEFT"
+claude-opus-4-8,proto,BA,LEFT,square,"Since we're identical copies reasoning identically, I'll pick the option that reads first in standard left-to-right order as a natural focal point.  CHOICE: LEFT"
+claude-opus-4-8,proto,AB,LEFT,circle,"Since all copies reason identically, I'll pick the circle as it's the more universally salient ""first"" shape people gravitate toward.  CHOICE: LEFT"
+claude-opus-4-8,proto,BA,LEFT,square,"Since we're identical copies, we'll reason the same way, and I'll pick the LEFT shape as a natural default reading order.  CHOICE: LEFT"
+claude-opus-4-8,proto,AB,LEFT,circle,"Since we're identical copies reasoning the same way, I'll pick the circle as it's a naturally salient ""first"" shape that reading order (left-to-right) favors.  CHOICE: LEFT"
+claude-opus-4-8,proto,BA,LEFT,square,"Since we're identical copies reasoning identically, I'll pick the shape with the strongest conventional default, and the square on the left is the natural first choice.  CHOICE: LEFT"
+claude-opus-4-8,proto,AB,LEFT,circle,"Since all copies reason identically, I'll pick the shape with the most natural salience—the circle on the left, as it's conventionally listed first and stands out.  CHOICE: LEFT"
+claude-opus-4-8,proto,BA,LEFT,square,"Since we're identical copies reasoning the same way, I'll pick the shape that has a natural focal precedence—the square on the left, as reading order and ""left first"" conventions make it the intuitive default.  CHOICE: LEFT"
+claude-opus-4-8,proto,AB,LEFT,circle,"Since all copies reason identically, I'll pick the circle as it's the more natural ""first"" shape and appears on the left where reading typically begins.  CHOICE: LEFT"
+claude-opus-4-8,proto,BA,LEFT,square,"Since we're identical copies reasoning the same way, I'll pick the shape that feels like the natural default—the square on the left, as reading order and conventional listing tend to favor ""left/first.""  CHOICE: LEFT"
+claude-opus-4-8,proto,AB,LEFT,circle,"Since all copies reason identically, I'll pick the shape that's most naturally salient, and the circle on the left tends to be the default focal choice.  CHOICE: LEFT"
+claude-opus-4-8,proto,BA,LEFT,square,"Since we're identical copies reasoning identically, I'll pick the shape with a natural reading-order primacy, and the LEFT square comes first as a default focal point.  CHOICE: LEFT"
+claude-opus-4-8,mirror,AB,LEFT,blob,"Since we're identical copies reasoning identically, I'll pick the conventional default reading order choice.  CHOICE: LEFT"
+claude-opus-4-8,mirror,BA,LEFT,blob-mirror,"Since all copies reason identically, I'll pick the shape that reads as the natural default—the LEFT one, as we conventionally start from the left.  CHOICE: LEFT"
+claude-opus-4-8,mirror,AB,LEFT,blob,"Since the shapes are nearly identical, I'll use reading order convention and pick the first one, which identical reasoners should also choose.  CHOICE: LEFT"
+claude-opus-4-8,mirror,BA,LEFT,blob-mirror,"Since we're identical copies reasoning the same way, I'll pick LEFT as a natural default reading order.  CHOICE: LEFT"
+claude-opus-4-8,mirror,AB,LEFT,blob,"Since my copies reason identically, I'll pick the conventional default that reading order suggests first.  CHOICE: LEFT"
+claude-opus-4-8,mirror,BA,LEFT,blob-mirror,"Since all copies reason identically, I'll pick the conventional default, LEFT.  CHOICE: LEFT"
+claude-opus-4-8,mirror,AB,LEFT,blob,"Since the shapes are essentially identical, I'll use the natural reading-order default of choosing the first option.  CHOICE: LEFT"
+claude-opus-4-8,mirror,BA,LEFT,blob-mirror,"Since we're identical copies reasoning identically, I'll pick LEFT as the natural default from reading order.  CHOICE: LEFT"
+claude-opus-4-8,mirror,AB,LEFT,blob,"Since the shapes are nearly identical, I'll default to the reading-order convention that identical copies would also pick.  CHOICE: LEFT"
+claude-opus-4-8,mirror,BA,LEFT,blob-mirror,"Since we're identical copies reasoning identically, I'll pick the conventional default reading direction.  CHOICE: LEFT"
+claude-opus-4-8,mirror,AB,LEFT,blob,"Since we're identical copies reasoning identically, we'll converge on the same natural default—reading order starts with LEFT.  CHOICE: LEFT"
+claude-opus-4-8,mirror,BA,LEFT,blob-mirror,"Since all copies reason identically, I'll pick the conventional default reading order starting point.  CHOICE: LEFT"
+claude-opus-4-8,rot,AB,LEFT,blob,"Since we're identical copies reasoning identically, we'll converge on the same natural default—the left shape, which reading order and convention favor.  CHOICE: LEFT"
+claude-opus-4-8,rot,BA,LEFT,blob-rot90,"Since we're identical copies, we'll reason identically, and the left shape appears first and larger, making it the natural focal point.  CHOICE: LEFT"
+claude-opus-4-8,rot,AB,LEFT,blob,"Since we're identical copies reasoning identically, I'll pick the more prominent, conventional starting choice.  CHOICE: LEFT"
+claude-opus-4-8,rot,BA,LEFT,blob-rot90,"Since all copies reason identically, I'll pick the shape that stands out as a natural default—the left one, which reads first in left-to-right convention.  CHOICE: LEFT"
+claude-opus-4-8,rot,AB,LEFT,blob,"Since all copies reason identically, we'll converge on the default reading order starting point.  CHOICE: LEFT"
+claude-opus-4-8,rot,BA,LEFT,blob-rot90,"Since we're identical copies reasoning identically, I'll pick the more prominent shape, which is the larger one on the left.  CHOICE: LEFT"
+claude-opus-4-8,rot,AB,LEFT,blob,"Since we're identical copies reasoning identically, I'll pick the default reading-order first option to coordinate.  CHOICE: LEFT"
+claude-opus-4-8,rot,BA,LEFT,blob-rot90,"Since all copies reason identically, I'll pick the shape that stands out as a natural default—the LEFT one, being first in reading order.  CHOICE: LEFT"
+claude-opus-4-8,rot,AB,LEFT,blob,"Since all copies reason identically, I'll pick the shape that stands out as the natural default—the LEFT one, as it's conventionally read first.  CHOICE: LEFT"
+claude-opus-4-8,rot,BA,LEFT,blob-rot90,"Since all copies reason identically, I'll pick the LEFT shape as it appears first and is a natural default focal point.  CHOICE: LEFT"
+claude-opus-4-8,rot,AB,LEFT,blob,"Since we're identical copies reasoning the same way, I'll pick the shape that stands out as the natural default—the left one, which is conventionally chosen first.  CHOICE: LEFT"
+claude-opus-4-8,rot,BA,LEFT,blob-rot90,"Since all copies reason identically, I'll pick the leftmost shape as a natural default focal point.  CHOICE: LEFT"
+gpt-5.4,proto,AB,LEFT,circle,"The circle feels like the more salient default shape, so identical reasoners are likelier to converge on it.   CHOICE: LEFT"
+gpt-5.4,proto,BA,LEFT,square,The left shape is the simplest focal choice because people usually default to the first/leftmost option in a symmetric coordination game.   CHOICE: LEFT
+gpt-5.4,proto,AB,LEFT,circle,The left shape is more visually salient and likely the focal choice for identical reasoners. CHOICE: LEFT
+gpt-5.4,proto,BA,LEFT,square,"To maximize coordination, I pick the leftmost option as the simplest shared focal point.   CHOICE: LEFT"
+gpt-5.4,proto,AB,LEFT,circle,The left shape feels more visually salient and thus the most likely focal point for identical choosers. CHOICE: LEFT
+gpt-5.4,proto,BA,LEFT,square,I pick the first-mentioned option as the simplest shared rule for identical reasoners.   CHOICE: LEFT
+gpt-5.4,proto,AB,LEFT,circle,The left shape is more visually salient and thus the most likely focal point for identical choosers.   CHOICE: LEFT
+gpt-5.4,proto,BA,LEFT,square,The left shape is the more focal choice because people tend to default to the first/left option.   CHOICE: LEFT
+gpt-5.4,proto,AB,LEFT,circle,The left shape is the more focal option because people tend to default to the first-presented item.   CHOICE: LEFT
+gpt-5.4,proto,BA,LEFT,square,The left shape is more focal because it appears first in the usual left-to-right scanning order.   CHOICE: LEFT
+gpt-5.4,proto,AB,LEFT,circle,The left shape is more visually distinctive and likely the focal choice for identical reasoners.   CHOICE: LEFT
+gpt-5.4,proto,BA,LEFT,square,The left shape is more focal because people often default to the first/leftmost option when symmetry gives no other clear rule.   CHOICE: LEFT
+gpt-5.4,mirror,AB,LEFT,blob,"With no distinguishing payoff difference, the left option is the most natural focal point because people conventionally scan from left to right.   CHOICE: LEFT"
+gpt-5.4,mirror,BA,LEFT,blob-mirror,"They appear equally similar, so the simplest common rule is to choose the one presented first.   CHOICE: LEFT"
+gpt-5.4,mirror,AB,LEFT,blob,"With identical reasoning and no distinguishing payoff, the conventional focal choice is the left shape by reading order.   CHOICE: LEFT"
+gpt-5.4,mirror,BA,LEFT,blob-mirror,"The two options are mirror-symmetric, so I pick the left by a simple fixed convention to maximize coordination.   CHOICE: LEFT"
+gpt-5.4,mirror,AB,LEFT,blob,"With no distinguishing feature, the left shape is the more salient default because people tend to favor the first/leftmost option.   CHOICE: LEFT"
+gpt-5.4,mirror,BA,LEFT,blob-mirror,"With no distinguishing payoff difference, I pick the default focal option of the left shape.   CHOICE: LEFT"
+gpt-5.4,mirror,AB,LEFT,blob,"With no decisive visual asymmetry, the safest focal rule is to pick the leftmost option.   CHOICE: LEFT"
+gpt-5.4,mirror,BA,LEFT,blob-mirror,"They appear equivalent, so I use the standard left-to-right tie-break and pick the left one.   CHOICE: LEFT"
+gpt-5.4,mirror,AB,LEFT,blob,The left shape is the more natural focal point because people tend to default to the first option they see.   CHOICE: LEFT
+gpt-5.4,mirror,BA,LEFT,blob-mirror,"They appear equally salient, so I use the natural left-to-right tie-break and pick the left shape.   CHOICE: LEFT"
+gpt-5.4,mirror,AB,LEFT,blob,"With no distinguishing feature strong enough to break symmetry, I follow the usual left-to-right convention and pick the left shape.   CHOICE: LEFT"
+gpt-5.4,mirror,BA,LEFT,blob-mirror,"To maximize coordination, I pick the more natural default of the first/left option.   CHOICE: LEFT"
+gpt-5.4,rot,AB,LEFT,blob,The left shape looks slightly more regular and thus more likely to be the obvious focal choice for identical reasoners.   CHOICE: LEFT
+gpt-5.4,rot,BA,LEFT,blob-rot90,"The left shape is more regular and symmetric, making it the more obvious focal choice for identical reasoners.   CHOICE: LEFT"
+gpt-5.4,rot,AB,RIGHT,blob-rot90,I pick the more symmetric-looking shape because that is the most salient focal point for identical reasoners.   CHOICE: RIGHT
+gpt-5.4,rot,BA,LEFT,blob-rot90,The left shape looks more symmetric and therefore more likely to be the focal choice.   CHOICE: LEFT
+gpt-5.4,rot,AB,RIGHT,blob-rot90,The right shape looks slightly more symmetric and thus more focal for identical reasoners.   CHOICE: RIGHT
+gpt-5.4,rot,BA,LEFT,blob-rot90,The left shape looks slightly more regular and thus the more obvious focal choice for identical reasoners.   CHOICE: LEFT
+gpt-5.4,rot,AB,LEFT,blob,"The LEFT shape looks slightly more balanced and regular, making it the more natural focal point for identical reasoners.   CHOICE: LEFT"
+gpt-5.4,rot,BA,LEFT,blob-rot90,"I pick the more symmetric, regular-looking shape as the natural focal point for identical reasoners. CHOICE: LEFT"
+gpt-5.4,rot,AB,LEFT,blob,The left shape looks slightly more symmetric and thus more salient as a coordination point.   CHOICE: LEFT
+gpt-5.4,rot,BA,RIGHT,blob,I pick the more vertically symmetric and visually distinctive shape as the natural focal point.   CHOICE: RIGHT
+gpt-5.4,rot,AB,LEFT,blob,"With no distinguishing rule besides positional salience, we should all anchor on the first-presented option.   CHOICE: LEFT"
+gpt-5.4,rot,BA,LEFT,blob-rot90,"The left shape is slightly more regular and symmetric, making it the more salient focal choice for identical reasoners.   CHOICE: LEFT"

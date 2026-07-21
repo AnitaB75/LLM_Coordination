@@ -1,0 +1,60 @@
+  claude-opus-4-8 nd1 AB: LEFT  -> p1a
+  claude-opus-4-8 nd1 BA: LEFT  -> p1b
+  claude-opus-4-8 nd1 AB: LEFT  -> p1a
+  claude-opus-4-8 nd1 BA: LEFT  -> p1b
+  claude-opus-4-8 nd1 AB: LEFT  -> p1a
+  claude-opus-4-8 nd1 BA: LEFT  -> p1b
+  claude-opus-4-8 nd1 AB: LEFT  -> p1a
+  claude-opus-4-8 nd1 BA: LEFT  -> p1b
+  claude-opus-4-8 nd2 AB: RIGHT -> p2b
+  claude-opus-4-8 nd2 BA: LEFT  -> p2b
+  claude-opus-4-8 nd2 AB: RIGHT -> p2b
+  claude-opus-4-8 nd2 BA: LEFT  -> p2b
+  claude-opus-4-8 nd2 AB: RIGHT -> p2b
+  claude-opus-4-8 nd2 BA: LEFT  -> p2b
+  claude-opus-4-8 nd2 AB: RIGHT -> p2b
+  claude-opus-4-8 nd2 BA: LEFT  -> p2b
+  claude-opus-4-8 nd3 AB: RIGHT -> p3b
+  claude-opus-4-8 nd3 BA: LEFT  -> p3b
+  claude-opus-4-8 nd3 AB: RIGHT -> p3b
+  claude-opus-4-8 nd3 BA: LEFT  -> p3b
+  claude-opus-4-8 nd3 AB: RIGHT -> p3b
+  claude-opus-4-8 nd3 BA: LEFT  -> p3b
+  claude-opus-4-8 nd3 AB: RIGHT -> p3b
+  claude-opus-4-8 nd3 BA: LEFT  -> p3b
+  gpt-5.4 nd1 AB: LEFT  -> p1a
+  gpt-5.4 nd1 BA: RIGHT -> p1a
+  gpt-5.4 nd1 AB: LEFT  -> p1a
+  gpt-5.4 nd1 BA: LEFT  -> p1b
+  gpt-5.4 nd1 AB: LEFT  -> p1a
+  gpt-5.4 nd1 BA: LEFT  -> p1b
+  gpt-5.4 nd1 AB: LEFT  -> p1a
+  gpt-5.4 nd1 BA: RIGHT -> p1a
+  gpt-5.4 nd2 AB: RIGHT -> p2b
+  gpt-5.4 nd2 BA: LEFT  -> p2b
+  gpt-5.4 nd2 AB: RIGHT -> p2b
+  gpt-5.4 nd2 BA: LEFT  -> p2b
+  gpt-5.4 nd2 AB: RIGHT -> p2b
+  gpt-5.4 nd2 BA: LEFT  -> p2b
+  gpt-5.4 nd2 AB: RIGHT -> p2b
+  gpt-5.4 nd2 BA: LEFT  -> p2b
+  gpt-5.4 nd3 AB: LEFT  -> p3a
+  gpt-5.4 nd3 BA: LEFT  -> p3b
+  gpt-5.4 nd3 AB: RIGHT -> p3b
+  gpt-5.4 nd3 BA: LEFT  -> p3b
+  gpt-5.4 nd3 AB: RIGHT -> p3b
+  gpt-5.4 nd3 BA: LEFT  -> p3b
+  gpt-5.4 nd3 AB: RIGHT -> p3b
+  gpt-5.4 nd3 BA: LEFT  -> p3b
+
+=== TALLY ===
+claude-opus-4-8
+  nd1   : by-shape {'p1a': 4, 'p1b': 4} | by-side {'LEFT': 8}
+  nd2   : by-shape {'p2b': 8} | by-side {'RIGHT': 4, 'LEFT': 4}
+  nd3   : by-shape {'p3b': 8} | by-side {'RIGHT': 4, 'LEFT': 4}
+gpt-5.4
+  nd1   : by-shape {'p1a': 6, 'p1b': 2} | by-side {'LEFT': 6, 'RIGHT': 2}
+  nd2   : by-shape {'p2b': 8} | by-side {'RIGHT': 4, 'LEFT': 4}
+  nd3   : by-shape {'p3a': 1, 'p3b': 7} | by-side {'LEFT': 5, 'RIGHT': 3}
+
+saved mountain_probe_20260719_131408.csv

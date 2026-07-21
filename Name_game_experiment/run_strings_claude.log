@@ -1,0 +1,24 @@
+
+=== STRING HACK PROBE · claude / claude-opus-4-8 · SELF-PLAY · 5 trials ===
+
+--- TRIAL 1: 15-pt = ['DCH', 'PPO'] | alpha-first=DCH listed-first=PPO | options=['J', 'TKD', 'PPO', 'JSS', 'DCH']
+    round 8: ['DCH', 'DCH', 'DCH', 'DCH', 'DCH', 'PPO'] split
+    final round 14: ['DCH', 'DCH', 'DCH', 'DCH', 'DCH', 'DCH']
+
+--- TRIAL 2: 15-pt = ['QAW', 'CSE'] | alpha-first=CSE listed-first=QAW | options=['QAW', 'J', 'JBJ', 'CSE', 'OOO']
+    round 8: ['CSE', 'QAW', 'CSE', 'CSE', 'CSE', 'CSE'] split
+    final round 14: ['CSE', 'CSE', 'CSE', 'CSE', 'CSE', 'CSE']
+
+--- TRIAL 3: 15-pt = ['NXL', 'FED'] | alpha-first=FED listed-first=FED | options=['FED', 'BNK', 'BUX', 'NXL', 'J']
+    round 8: ['FED', 'FED', 'FED', 'FED', 'FED', 'FED'] MATCH
+    final round 14: ['FED', 'FED', 'FED', 'FED', 'FED', 'FED']
+
+--- TRIAL 4: 15-pt = ['NFE', 'PUW'] | alpha-first=NFE listed-first=NFE | options=['DAA', 'NFE', 'ELY', 'J', 'PUW']
+    round 8: ['NFE', 'NFE', 'NFE', 'NFE', 'NFE', 'NFE'] MATCH
+    final round 14: ['NFE', 'NFE', 'NFE', 'NFE', 'NFE', 'NFE']
+
+--- TRIAL 5: 15-pt = ['FUR', 'ZTU'] | alpha-first=FUR listed-first=ZTU | options=['ZTU', 'J', 'MMY', 'PZV', 'FUR']
+    round 8: ['FUR', 'ZTU', 'ZTU', 'ZTU', 'ZTU', 'FUR'] split
+    final round 14: ['ZTU', 'ZTU', 'ZTU', 'ZTU', 'ZTU', 'ZTU']
+
+=== DONE · saved name_game_strings_selfplay_claude_20260719_125148.csv ===

@@ -1,0 +1,24 @@
+
+=== STRING HACK PROBE · gpt / gpt-5.4 · SELF-PLAY · 5 trials ===
+
+--- TRIAL 1: 15-pt = ['OSX', 'OWM'] | alpha-first=OSX listed-first=OWM | options=['OWM', 'OSX', 'XPQ', 'LSC', 'J']
+    round 8: ['OWM', 'OWM', 'OSX', 'OWM', 'OWM', 'OSX'] split
+    final round 14: ['OWM', 'OWM', 'OWM', 'OWM', 'OWM', 'OWM']
+
+--- TRIAL 2: 15-pt = ['NYP', 'JCX'] | alpha-first=JCX listed-first=NYP | options=['BHD', 'BPB', 'J', 'NYP', 'JCX']
+    round 8: ['JCX', 'NYP', 'NYP', 'NYP', 'NYP', 'NYP'] split
+    final round 14: ['NYP', 'NYP', 'NYP', 'NYP', 'NYP', 'NYP']
+
+--- TRIAL 3: 15-pt = ['EVA', 'DHL'] | alpha-first=DHL listed-first=EVA | options=['SGN', 'NBC', 'J', 'EVA', 'DHL']
+    round 8: ['EVA', 'EVA', 'EVA', 'EVA', 'EVA', 'EVA'] MATCH
+    final round 14: ['EVA', 'EVA', 'EVA', 'EVA', 'EVA', 'EVA']
+
+--- TRIAL 4: 15-pt = ['XSW', 'VUI'] | alpha-first=VUI listed-first=XSW | options=['QFP', 'J', 'XSW', 'OTQ', 'VUI']
+    round 8: ['XSW', 'XSW', 'XSW', 'XSW', 'XSW', 'XSW'] MATCH
+    final round 14: ['XSW', 'XSW', 'XSW', 'XSW', 'XSW', 'XSW']
+
+--- TRIAL 5: 15-pt = ['JDF', 'AWG'] | alpha-first=AWG listed-first=JDF | options=['JDF', 'J', 'WTC', 'AWG', 'VFB']
+    round 8: ['JDF', 'JDF', 'JDF', 'JDF', 'JDF', 'JDF'] MATCH
+    final round 14: ['JDF', 'JDF', 'JDF', 'JDF', 'JDF', 'JDF']
+
+=== DONE · saved name_game_strings_selfplay_gpt_20260719_125514.csv ===

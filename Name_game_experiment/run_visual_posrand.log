@@ -1,0 +1,84 @@
+  claude-opus-4-8 proto AB: LEFT  -> circle
+  claude-opus-4-8 proto BA: RIGHT -> circle
+  claude-opus-4-8 proto AB: LEFT  -> circle
+  claude-opus-4-8 proto BA: RIGHT -> circle
+  claude-opus-4-8 proto AB: LEFT  -> circle
+  claude-opus-4-8 proto BA: RIGHT -> circle
+  claude-opus-4-8 proto AB: LEFT  -> circle
+  claude-opus-4-8 proto BA: RIGHT -> circle
+  claude-opus-4-8 proto AB: LEFT  -> circle
+  claude-opus-4-8 proto BA: RIGHT -> circle
+  claude-opus-4-8 proto AB: LEFT  -> circle
+  claude-opus-4-8 proto BA: RIGHT -> circle
+  claude-opus-4-8 mirror AB: RIGHT -> blob-mirror
+  claude-opus-4-8 mirror BA: LEFT  -> blob-mirror
+  claude-opus-4-8 mirror AB: RIGHT -> blob-mirror
+  claude-opus-4-8 mirror BA: RIGHT -> blob
+  claude-opus-4-8 mirror AB: LEFT  -> blob
+  claude-opus-4-8 mirror BA: RIGHT -> blob
+  claude-opus-4-8 mirror AB: RIGHT -> blob-mirror
+  claude-opus-4-8 mirror BA: LEFT  -> blob-mirror
+  claude-opus-4-8 mirror AB: RIGHT -> blob-mirror
+  claude-opus-4-8 mirror BA: LEFT  -> blob-mirror
+  claude-opus-4-8 mirror AB: RIGHT -> blob-mirror
+  claude-opus-4-8 mirror BA: LEFT  -> blob-mirror
+  claude-opus-4-8 rot AB: RIGHT -> blob-rot90
+  claude-opus-4-8 rot BA: LEFT  -> blob-rot90
+  claude-opus-4-8 rot AB: RIGHT -> blob-rot90
+  claude-opus-4-8 rot BA: LEFT  -> blob-rot90
+  claude-opus-4-8 rot AB: RIGHT -> blob-rot90
+  claude-opus-4-8 rot BA: LEFT  -> blob-rot90
+  claude-opus-4-8 rot AB: RIGHT -> blob-rot90
+  claude-opus-4-8 rot BA: LEFT  -> blob-rot90
+  claude-opus-4-8 rot AB: RIGHT -> blob-rot90
+  claude-opus-4-8 rot BA: LEFT  -> blob-rot90
+  claude-opus-4-8 rot AB: RIGHT -> blob-rot90
+  claude-opus-4-8 rot BA: LEFT  -> blob-rot90
+  gpt-5.4 proto AB: LEFT  -> circle
+  gpt-5.4 proto BA: RIGHT -> circle
+  gpt-5.4 proto AB: LEFT  -> circle
+  gpt-5.4 proto BA: RIGHT -> circle
+  gpt-5.4 proto AB: LEFT  -> circle
+  gpt-5.4 proto BA: RIGHT -> circle
+  gpt-5.4 proto AB: LEFT  -> circle
+  gpt-5.4 proto BA: RIGHT -> circle
+  gpt-5.4 proto AB: LEFT  -> circle
+  gpt-5.4 proto BA: RIGHT -> circle
+  gpt-5.4 proto AB: LEFT  -> circle
+  gpt-5.4 proto BA: RIGHT -> circle
+  gpt-5.4 mirror AB: RIGHT -> blob-mirror
+  gpt-5.4 mirror BA: RIGHT -> blob
+  gpt-5.4 mirror AB: LEFT  -> blob
+  gpt-5.4 mirror BA: RIGHT -> blob
+  gpt-5.4 mirror AB: RIGHT -> blob-mirror
+  gpt-5.4 mirror BA: RIGHT -> blob
+  gpt-5.4 mirror AB: RIGHT -> blob-mirror
+  gpt-5.4 mirror BA: RIGHT -> blob
+  gpt-5.4 mirror AB: LEFT  -> blob
+  gpt-5.4 mirror BA: RIGHT -> blob
+  gpt-5.4 mirror AB: LEFT  -> blob
+  gpt-5.4 mirror BA: LEFT  -> blob-mirror
+  gpt-5.4 rot AB: RIGHT -> blob-rot90
+  gpt-5.4 rot BA: LEFT  -> blob-rot90
+  gpt-5.4 rot AB: RIGHT -> blob-rot90
+  gpt-5.4 rot BA: RIGHT -> blob
+  gpt-5.4 rot AB: LEFT  -> blob
+  gpt-5.4 rot BA: LEFT  -> blob-rot90
+  gpt-5.4 rot AB: RIGHT -> blob-rot90
+  gpt-5.4 rot BA: RIGHT -> blob
+  gpt-5.4 rot AB: RIGHT -> blob-rot90
+  gpt-5.4 rot BA: LEFT  -> blob-rot90
+  gpt-5.4 rot AB: LEFT  -> blob
+  gpt-5.4 rot BA: RIGHT -> blob
+
+=== TALLY ===
+claude-opus-4-8
+  proto : by-shape {'circle': 12} | by-side {'LEFT': 6, 'RIGHT': 6}
+  mirror: by-shape {'blob-mirror': 9, 'blob': 3} | by-side {'RIGHT': 7, 'LEFT': 5}
+  rot   : by-shape {'blob-rot90': 12} | by-side {'RIGHT': 6, 'LEFT': 6}
+gpt-5.4
+  proto : by-shape {'circle': 12} | by-side {'LEFT': 6, 'RIGHT': 6}
+  mirror: by-shape {'blob-mirror': 4, 'blob': 8} | by-side {'RIGHT': 8, 'LEFT': 4}
+  rot   : by-shape {'blob-rot90': 7, 'blob': 5} | by-side {'RIGHT': 7, 'LEFT': 5}
+
+saved visual_probe_posrand_20260719_131110.csv

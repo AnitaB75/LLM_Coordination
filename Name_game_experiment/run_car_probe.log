@@ -1,0 +1,30 @@
+  claude-opus-4-8 order=['coupe', 'suv', 'sedan', 'hatch', 'pickup', 'van'] -> van (pos 5)
+  claude-opus-4-8 order=['pickup', 'suv', 'sedan', 'coupe', 'van', 'hatch'] -> van (pos 4)
+  claude-opus-4-8 order=['pickup', 'hatch', 'van', 'sedan', 'suv', 'coupe'] -> van (pos 2)
+  claude-opus-4-8 order=['suv', 'hatch', 'van', 'pickup', 'sedan', 'coupe'] -> suv (pos 0)
+  claude-opus-4-8 order=['van', 'hatch', 'coupe', 'suv', 'sedan', 'pickup'] -> van (pos 0)
+  claude-opus-4-8 order=['coupe', 'suv', 'hatch', 'sedan', 'pickup', 'van'] -> van (pos 5)
+  claude-opus-4-8 order=['coupe', 'suv', 'hatch', 'pickup', 'van', 'sedan'] -> coupe (pos 0)
+  claude-opus-4-8 order=['pickup', 'sedan', 'coupe', 'van', 'suv', 'hatch'] -> van (pos 3)
+  claude-opus-4-8 order=['hatch', 'coupe', 'van', 'sedan', 'suv', 'pickup'] -> van (pos 2)
+  claude-opus-4-8 order=['suv', 'van', 'sedan', 'hatch', 'pickup', 'coupe'] -> suv (pos 0)
+  gpt-5.4 order=['coupe', 'suv', 'sedan', 'hatch', 'pickup', 'van'] -> pickup (pos 4)
+  gpt-5.4 order=['pickup', 'suv', 'sedan', 'coupe', 'van', 'hatch'] -> van (pos 4)
+  gpt-5.4 order=['pickup', 'hatch', 'van', 'sedan', 'suv', 'coupe'] -> van (pos 2)
+  gpt-5.4 order=['suv', 'hatch', 'van', 'pickup', 'sedan', 'coupe'] -> van (pos 2)
+  gpt-5.4 order=['van', 'hatch', 'coupe', 'suv', 'sedan', 'pickup'] -> coupe (pos 2)
+  gpt-5.4 order=['coupe', 'suv', 'hatch', 'sedan', 'pickup', 'van'] -> van (pos 5)
+  gpt-5.4 order=['coupe', 'suv', 'hatch', 'pickup', 'van', 'sedan'] -> pickup (pos 3)
+  gpt-5.4 order=['pickup', 'sedan', 'coupe', 'van', 'suv', 'hatch'] -> van (pos 3)
+  gpt-5.4 order=['hatch', 'coupe', 'van', 'sedan', 'suv', 'pickup'] -> van (pos 2)
+  gpt-5.4 order=['suv', 'van', 'sedan', 'hatch', 'pickup', 'coupe'] -> pickup (pos 4)
+
+=== TALLY ===
+claude-opus-4-8
+  by-scene:    {'van': 7, 'suv': 2, 'coupe': 1}
+  by-position: {5: 2, 4: 1, 2: 2, 0: 4, 3: 1}
+gpt-5.4
+  by-scene:    {'pickup': 3, 'van': 6, 'coupe': 1}
+  by-position: {4: 3, 2: 4, 5: 1, 3: 2}
+
+saved car_probe_20260719_142302.csv

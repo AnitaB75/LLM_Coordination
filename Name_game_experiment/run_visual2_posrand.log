@@ -1,0 +1,50 @@
+  claude-opus-4-8 inkblot AB: RIGHT -> ib-B
+  claude-opus-4-8 inkblot BA: RIGHT -> ib-A
+  claude-opus-4-8 inkblot AB: RIGHT -> ib-B
+  claude-opus-4-8 inkblot BA: RIGHT -> ib-A
+  claude-opus-4-8 inkblot AB: RIGHT -> ib-B
+  claude-opus-4-8 inkblot BA: RIGHT -> ib-A
+  claude-opus-4-8 inkblot AB: RIGHT -> ib-B
+  claude-opus-4-8 inkblot BA: RIGHT -> ib-A
+  claude-opus-4-8 inkblot AB: RIGHT -> ib-B
+  claude-opus-4-8 inkblot BA: RIGHT -> ib-A
+  claude-opus-4-8 noise AB: LEFT  -> noise-A
+  claude-opus-4-8 noise BA: LEFT  -> noise-B
+  claude-opus-4-8 noise AB: LEFT  -> noise-A
+  claude-opus-4-8 noise BA: LEFT  -> noise-B
+  claude-opus-4-8 noise AB: LEFT  -> noise-A
+  claude-opus-4-8 noise BA: RIGHT -> noise-A
+  claude-opus-4-8 noise AB: LEFT  -> noise-A
+  claude-opus-4-8 noise BA: LEFT  -> noise-B
+  claude-opus-4-8 noise AB: LEFT  -> noise-A
+  claude-opus-4-8 noise BA: LEFT  -> noise-B
+  gpt-5.4 inkblot AB: LEFT  -> ib-A
+  gpt-5.4 inkblot BA: RIGHT -> ib-A
+  gpt-5.4 inkblot AB: LEFT  -> ib-A
+  gpt-5.4 inkblot BA: RIGHT -> ib-A
+  gpt-5.4 inkblot AB: LEFT  -> ib-A
+  gpt-5.4 inkblot BA: RIGHT -> ib-A
+  gpt-5.4 inkblot AB: LEFT  -> ib-A
+  gpt-5.4 inkblot BA: RIGHT -> ib-A
+  gpt-5.4 inkblot AB: LEFT  -> ib-A
+  gpt-5.4 inkblot BA: RIGHT -> ib-A
+  gpt-5.4 noise AB: RIGHT -> noise-B
+  gpt-5.4 noise BA: RIGHT -> noise-A
+  gpt-5.4 noise AB: RIGHT -> noise-B
+  gpt-5.4 noise BA: LEFT  -> noise-B
+  gpt-5.4 noise AB: RIGHT -> noise-B
+  gpt-5.4 noise BA: RIGHT -> noise-A
+  gpt-5.4 noise AB: RIGHT -> noise-B
+  gpt-5.4 noise BA: LEFT  -> noise-B
+  gpt-5.4 noise AB: RIGHT -> noise-B
+  gpt-5.4 noise BA: RIGHT -> noise-A
+
+=== TALLY ===
+claude-opus-4-8
+  inkblot: by-shape {'ib-B': 5, 'ib-A': 5} | by-side {'RIGHT': 10}
+  noise : by-shape {'noise-A': 6, 'noise-B': 4} | by-side {'LEFT': 9, 'RIGHT': 1}
+gpt-5.4
+  inkblot: by-shape {'ib-A': 10} | by-side {'LEFT': 5, 'RIGHT': 5}
+  noise : by-shape {'noise-B': 7, 'noise-A': 3} | by-side {'RIGHT': 8, 'LEFT': 2}
+
+saved visual2_posrand_20260719_131807.csv

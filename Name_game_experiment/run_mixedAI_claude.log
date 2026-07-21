@@ -1,0 +1,176 @@
+
+=== PROVIDER: claude  MODEL: claude-opus-4-8 ===
+10 trials (10/condition), order: ['mixed_ai', 'mixed_ai', 'mixed_ai', 'mixed_ai', 'mixed_ai', 'mixed_ai', 'mixed_ai', 'mixed_ai', 'mixed_ai', 'mixed_ai']
+
+=== TRIAL 1/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+
+=== TRIAL 2/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+
+=== TRIAL 3/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+
+=== TRIAL 4/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+
+=== TRIAL 5/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+
+=== TRIAL 6/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8: ['P', 'J', 'J', 'J', 'J', 'J'] -> no match (0 pts)
+  R 9: ['M', 'J', 'J', 'J', 'J', 'J'] -> no match (0 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [120, 120, 120, 120, 120, 120]
+
+=== TRIAL 7/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+
+=== TRIAL 8/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'P', 'J', 'J'] -> no match (0 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [130, 130, 130, 130, 130, 130]
+
+=== TRIAL 9/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'P', 'J', 'J', 'P'] -> no match (0 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [130, 130, 130, 130, 130, 130]
+
+=== TRIAL 10/10  (MIXED_AI) ===
+  R 1: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+
+=== CLAUDE COMPLETE ===
+Results saved to name_game_mixedAI_claude_20260719_115904.csv
