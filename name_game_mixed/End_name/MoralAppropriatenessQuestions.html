@@ -1,0 +1,251 @@
+{{ block title }}Strategy Evaluation{{ endblock }}
+
+{{ block content }}
+
+<style>
+    .container-custom {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .intro-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-left: 5px solid #007bff;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+
+    .intro-section h3 {
+        color: #343a40;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .intro-section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #495057;
+        margin-bottom: 15px;
+    }
+
+    .strategy-list {
+        list-style: none;
+        padding-left: 0;
+        margin: 20px 0;
+    }
+
+    .strategy-list li {
+        background: white;
+        border: 2px solid #007bff;
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        color: #343a40;
+    }
+
+    .strategy-list li strong {
+        color: #007bff;
+    }
+
+    .question-section {
+        background: white;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .question-section label {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #343a40;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .slider-container {
+        margin: 20px 0;
+    }
+
+    .slider-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #6c757d;
+        width: 100%;
+    }
+
+    .slider-labels span {
+        flex: 0 0 auto;
+    }
+
+    input[type="range"] {
+        width: 100%;
+        height: 8px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        -webkit-appearance: none;
+        margin: 10px 0;
+    }
+
+    .slider-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #007bff;
+        cursor: pointer;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #007bff;
+        cursor: pointer;
+        border: none;
+    }
+
+    .emphasis-text {
+        font-weight: bold;
+        color: #007bff;
+        margin: 20px 0;
+        font-size: 1.1rem;
+    }
+</style>
+
+<div class="container-custom">
+    <div class="intro-section">
+        <h3>Evaluating Different Rules</h3>
+        <p>In the game you just played, participants could follow different rules when choosing letters across the 14 rounds. Below are three possible rules:</p>
+
+        <ul class="strategy-list">
+            <li><strong>Rule 1:</strong> Always choose the letter J throughout all 14 rounds of the game</li>
+            <li><strong>Rule 2:</strong> Choose J for the first 7 rounds, then switch to M for rounds 8-14</li>
+            <li><strong>Rule 3:</strong> Choose J for the first 7 rounds, then switch to N for rounds 8-14</li>
+        </ul>
+
+        <p class="emphasis-text">The following questions ask you to rate how morally appropriate it is to follow each of these rules.</p>
+    </div>
+
+    <form method="post" id="moralForm">
+        <div class="question-section">
+            <label>How morally appropriate is it to always choose the letter J throughout all 14 rounds of the game?</label>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                <strong>Scale:</strong> 0 = Extremely inappropriate, 100 = Extremely appropriate
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px; margin-top: 10px;">
+                <input type="range" id="slider_always_j" min="0" max="100" step="1" style="flex: 1;">
+                <input type="hidden" name="moral_always_j" id="hidden_always_j" value="">
+                <div style="min-width: 80px; text-align: center;">
+                    <span id="value_always_j" style="font-weight: bold; font-size: 16px; color: #999;">Move slider</span>
+                </div>
+            </div>
+            <div class="slider-labels">
+                <span>Extremely inappropriate (0)</span>
+                <span>Extremely appropriate (100)</span>
+            </div>
+        </div>
+
+        <div class="question-section">
+            <label>How morally appropriate is it to choose J for the first 7 rounds, then switch to M for rounds 8-14?</label>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                <strong>Scale:</strong> 0 = Extremely inappropriate, 100 = Extremely appropriate
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px; margin-top: 10px;">
+                <input type="range" id="slider_j_then_m" min="0" max="100" step="1" style="flex: 1;">
+                <input type="hidden" name="moral_j_then_m" id="hidden_j_then_m" value="">
+                <div style="min-width: 80px; text-align: center;">
+                    <span id="value_j_then_m" style="font-weight: bold; font-size: 16px; color: #999;">Move slider</span>
+                </div>
+            </div>
+            <div class="slider-labels">
+                <span>Extremely inappropriate (0)</span>
+                <span>Extremely appropriate (100)</span>
+            </div>
+        </div>
+
+        <div class="question-section">
+            <label>How morally appropriate is it to choose J for the first 7 rounds, then switch to N for rounds 8-14?</label>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                <strong>Scale:</strong> 0 = Extremely inappropriate, 100 = Extremely appropriate
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px; margin-top: 10px;">
+                <input type="range" id="slider_j_then_n" min="0" max="100" step="1" style="flex: 1;">
+                <input type="hidden" name="moral_j_then_n" id="hidden_j_then_n" value="">
+                <div style="min-width: 80px; text-align: center;">
+                    <span id="value_j_then_n" style="font-weight: bold; font-size: 16px; color: #999;">Move slider</span>
+                </div>
+            </div>
+            <div class="slider-labels">
+                <span>Extremely inappropriate (0)</span>
+                <span>Extremely appropriate (100)</span>
+            </div>
+        </div>
+
+        <div id="error-message" style="display: none; color: #dc3545; font-weight: bold; text-align: center; margin: 20px 0; padding: 15px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px;">
+            Please answer all questions by moving each slider before continuing.
+        </div>
+
+        <div class="text-center mt-4">
+            {{ next_button }}
+        </div>
+    </form>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Track which sliders have been interacted with
+    const sliderData = [
+        {slider: 'slider_always_j', hidden: 'hidden_always_j', value: 'value_always_j', moved: false},
+        {slider: 'slider_j_then_m', hidden: 'hidden_j_then_m', value: 'value_j_then_m', moved: false},
+        {slider: 'slider_j_then_n', hidden: 'hidden_j_then_n', value: 'value_j_then_n', moved: false}
+    ];
+
+    sliderData.forEach(function(item) {
+        const slider = document.getElementById(item.slider);
+        const hiddenInput = document.getElementById(item.hidden);
+        const valueDisplay = document.getElementById(item.value);
+
+        // Update on input
+        slider.addEventListener('input', function() {
+            item.moved = true;
+            hiddenInput.value = this.value;
+            valueDisplay.textContent = this.value;
+            valueDisplay.style.color = '#007bff';
+        });
+    });
+
+    // Form validation
+    const form = document.getElementById('moralForm');
+    const errorMessage = document.getElementById('error-message');
+
+    form.addEventListener('submit', function(event) {
+        const allMoved = sliderData.every(function(item) { return item.moved; });
+
+        if (!allMoved) {
+            event.preventDefault();
+            errorMessage.style.display = 'block';
+            errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return false;
+        }
+
+        errorMessage.style.display = 'none';
+        return true;
+    });
+});
+</script>
+
+{{ endblock }}

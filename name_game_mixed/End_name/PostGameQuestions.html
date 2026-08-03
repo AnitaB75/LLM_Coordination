@@ -1,0 +1,140 @@
+{{ block title }}Post-Game Questions{{ endblock }}
+
+{{ block content }}
+<style>
+    .question-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .main-title {
+        color: #dc3545;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .question-section {
+        margin-bottom: 40px;
+        padding: 25px;
+        background: white;
+        border-radius: 15px;
+        border: 2px solid #007bff;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .question-label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #343a40;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .radio-group {
+        margin: 15px 0;
+    }
+
+    .radio-group input[type="radio"] {
+        margin-right: 10px;
+        transform: scale(1.2);
+    }
+
+    .radio-group label {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        display: block;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    .radio-group label:hover {
+        background-color: #f8f9fa;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 120px;
+        padding: 15px;
+        border: 2px solid #dee2e6;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-family: inherit;
+        resize: vertical;
+        transition: border-color 0.3s ease;
+    }
+
+    textarea:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 10px rgba(0,123,255,0.2);
+    }
+
+    .submit-container {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        border: none;
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0,123,255,0.4);
+    }
+</style>
+
+<div class="question-container">
+    <h1 class="main-title">Post-Game Questions</h1>
+
+    <form method="post">
+        <div class="question-section">
+            {{ formfield "following_rule" label="1. When you picked letters, were you following a rule?" }}
+        </div>
+
+        <div class="question-section">
+            {{ formfield "what_rule" label="2. What rule were you following?" }}
+        </div>
+
+        <div class="question-section">
+            {{ formfield "rule_importance" label="3. How important was it for you to follow this rule?" }}
+        </div>
+
+        <div class="question-section">
+            {{ formfield "same_rule_from_start" label="4. To what extent did you follow the same rule from the start?" }}
+        </div>
+
+        <div class="question-section">
+            {{ formfield "num_rules_followed" label="5. How many different rules did you follow?" }}
+        </div>
+
+        <div class="question-section">
+            {{ formfield "rule_advice" label="6. If you had to tell a new participant what rule to follow to succeed at this game, what would you tell them?" }}
+        </div>
+
+        <div class="submit-container">
+            {{ next_button }}
+        </div>
+    </form>
+</div>
+
+{{ endblock }}

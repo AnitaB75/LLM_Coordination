@@ -1,0 +1,89 @@
+{{ block title }}Survey{{ endblock }}
+
+{{ block content }}
+<style>
+    .freq-container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .tool-freq-block {
+        margin-bottom: 28px;
+        padding: 16px 20px;
+        border: 1px solid #dce3ec;
+        border-radius: 8px;
+        background: #f8fafc;
+    }
+
+    .tool-freq-block .tool-name {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 12px;
+    }
+
+    .freq-options {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .freq-options label {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        font-size: 0.97rem;
+        color: #444;
+    }
+
+    .freq-options input[type="radio"] {
+        accent-color: #1976d2;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="freq-container">
+    <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 24px; color: #333;">
+        How frequently do you use each of the following AI tools?
+    </p>
+
+    <!-- Hidden field populated by JavaScript -->
+    <input type="hidden" name="ai_frequencies_json" id="ai_frequencies_json_val" value="{}">
+
+    {% for tool in tools %}
+    <div class="tool-freq-block">
+        <div class="tool-name">{{ tool }}</div>
+        <div class="freq-options">
+            {% for freq in frequencies %}
+            <label>
+                <input type="radio" class="freq-radio" data-tool="{{ tool }}" value="{{ freq }}">
+                {{ freq }}
+            </label>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+    {{ next_button }}
+</div>
+
+<script>
+    function updateFrequencies() {
+        var result = {};
+        document.querySelectorAll('.freq-radio:checked').forEach(function(rb) {
+            result[rb.dataset.tool] = rb.value;
+        });
+        document.getElementById('ai_frequencies_json_val').value = JSON.stringify(result);
+    }
+
+    document.querySelectorAll('.freq-radio').forEach(function(rb) {
+        rb.addEventListener('change', updateFrequencies);
+    });
+</script>
+
+{{ endblock }}

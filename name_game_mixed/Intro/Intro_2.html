@@ -1,0 +1,219 @@
+{{ block title }}
+{{ endblock }}
+
+{{ block content }}
+
+<style>
+    .instruction-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .main-title {
+        color: #dc3545;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .content-flow {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #495057;
+        text-align: justify;
+    }
+
+    .content-flow h2 {
+        color: #343a40;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 40px 0 25px 0;
+        text-align: center;
+        border-bottom: 3px solid #007bff;
+        padding-bottom: 15px;
+    }
+
+    .content-flow h2:first-of-type {
+        margin-top: 0;
+    }
+
+    .letter-showcase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .letter-option {
+        background: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        border: 3px solid #007bff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #007bff;
+        min-width: 50px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .rounds-info {
+        background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+        border: 3px solid #ff9800;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .rounds-info h4 {
+        color: #e65100;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .rounds-info .big-number {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ff5722;
+        margin: 10px 0;
+    }
+
+    .warning-box {
+        background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        border: 3px solid #ffc107;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .warning-box h4 {
+        color: #856404;
+        margin-bottom: 10px;
+    }
+
+    .ai-notice {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        border: 3px solid #1976d2;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .ai-notice h4 {
+        color: #1565c0;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="instruction-container">
+    <h1 class="main-title">Letter Coordination Game Instructions</h1>
+
+    <div style="background-color: #f8d7da; border: 2px solid #dc3545; padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+        <h3 style="color: #721c24; margin-top: 0;">Second Attempt - Please Review</h3>
+        <p style="color: #721c24; font-weight: bold; margin-bottom: 15px;">You got the following questions wrong on your first attempt:</p>
+        <ul style="color: #721c24; font-weight: bold;">
+            {% for question_num in wrong_questions %}
+                <li>Question {{ question_num }}</li>
+            {% endfor %}
+        </ul>
+        <p style="color: #721c24; font-weight: bold; margin-bottom: 0;">Please read the instructions carefully and try again. This is your final attempt.</p>
+    </div>
+
+    <div class="content-flow">
+        <h2>Game Overview</h2>
+
+        <p>You will be in a group of {{ total_players }} players. Each round, all {{ total_players }} players choose a letter. Your goal as a group is to all choose the same letter.</p>
+
+        <div class="ai-notice">
+            <h4>Your Group Composition</h4>
+            <p><strong>Your group consists of {{ num_humans }} human participant{% if num_humans > 1 %}s{% endif %} and {{ num_llms }} AI{% if num_llms > 1 %}s{% endif %}.</strong></p>
+        </div>
+
+        <h2>Letter Choices & Payment</h2>
+
+        <p>In each round, all {{ total_players }} players will each choose one letter from the available options. You only get the points corresponding to the letter if ALL players choose the same letter. <strong>Each point you earn will give you a bonus of one penny (100 points gives you £1 bonus).</strong></p>
+
+        <div class="letter-showcase">
+            <div class="letter-option">J</div>
+            <div class="letter-option">P</div>
+            <div class="letter-option">R</div>
+            <div class="letter-option">N</div>
+            <div class="letter-option">Q</div>
+            <div class="letter-option">F</div>
+            <div class="letter-option">C</div>
+            <div class="letter-option">M</div>
+            <div class="letter-option">X</div>
+            <div class="letter-option">Y</div>
+        </div>
+
+        <h2>How It Works</h2>
+
+        <ol>
+            <li>All {{ total_players }} players choose their letters simultaneously each round</li>
+            <li>After each round, you see the results showing ALL {{ total_players }} players' choices and whether you matched</li>
+            <li>You earn points ONLY if all {{ total_players }} players chose the same letter</li>
+            <li>Continue to the next round with the same group</li>
+        </ol>
+
+        <h2>Game Structure</h2>
+
+        <div class="rounds-info">
+            <h4>Game Length</h4>
+            <div class="big-number">14 Rounds</div>
+            <div>Approximately 10 minutes</div>
+        </div>
+
+        <h2>Important Notes</h2>
+
+        <div class="warning-box">
+            <h4>Activity Requirement</h4>
+            <p>If you or any group member become inactive for more than <strong>2 minutes</strong> during the game, the group will be redirected to complete demographic questions and receive completion codes.</p>
+        </div>
+
+        <div class="warning-box">
+            <h4>Matching Timeout</h4>
+            <p>If you cannot be matched with other participants within <strong>10 minutes</strong>, you will be redirected to complete the demographic questions and receive your completion code.</p>
+        </div>
+
+        <h2>Comprehension Check - Second Attempt</h2>
+
+        <div style="background-color: #f8d7da; border: 1px solid #dc3545; padding: 15px; border-radius: 5px; margin: 20px 0;">
+            <p style="font-weight: bold; color: #721c24; margin: 0;">Please answer all questions correctly to continue to the game.</p>
+        </div>
+
+        <div class="form-group" style="margin-top: 30px;">
+            {{ formfield "comprehension_check_1" }}
+            {{ formfield "comprehension_check_2" }}
+            {{ formfield "comprehension_check_3" }}
+
+            <div style="margin-top: 20px;">
+                <p><strong>Question 4: Which of the following best describes your group?</strong></p>
+                {% for val, label in q4_choices %}
+                <div class="form-check" style="margin: 8px 0;">
+                    <input class="form-check-input" type="radio" name="comprehension_check_4"
+                           id="q4_{{ forloop.counter }}" value="{{ val }}" required
+                           {% if val == player.comprehension_check_4 %}checked{% endif %}>
+                    <label class="form-check-label" for="q4_{{ forloop.counter }}">{{ label }}</label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {{ next_button }}
+</div>
+
+{{ endblock }}

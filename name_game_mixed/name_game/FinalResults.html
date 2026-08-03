@@ -1,0 +1,14 @@
+{{ block title }}Experiment Complete{{ endblock }}
+
+{{ block content }}
+<div style="text-align: center; margin-top: 50px;">
+    <h1>Experiment Complete</h1>
+
+    <div style="background-color: #e3f2fd; border: 2px solid #2196f3; border-radius: 8px; padding: 20px; margin: 20px auto; max-width: 500px;">
+        <p style="font-weight: bold; color: #0d47a1; margin: 10px 0;">You completed all {{ total_rounds }} rounds successfully.</p>
+        <p style="font-weight: bold; color: #0d47a1; margin: 10px 0;">Please click the "Next" button below to complete a few final questions and receive your completion code.</p>
+    </div>
+
+    {{ next_button }}
+</div>
+{{ endblock }}

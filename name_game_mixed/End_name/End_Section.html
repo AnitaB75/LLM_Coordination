@@ -1,0 +1,39 @@
+
+{{ block title }}
+Game Completed - Survey Next
+{{ endblock }}
+
+{% block content %}
+
+<style>
+    .points-box {
+        background-color: #e3f2fd;
+        border: 2px solid #2196f3;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .points-number {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #333;
+        margin: 10px 0;
+    }
+</style>
+
+<p>Thank you for playing!</p>
+<p>You have successfully completed all rounds of the cooperative matching game.</p>
+
+<p><strong>Before you finish:</strong></p>
+
+<p>We would like to ask you a few questions about yourself and your experience with the game.
+Your responses will help us better understand the results of this experiment and are completely confidential.</p>
+
+<div class="alert alert-info">
+    <p>The survey will include a few short questions about your AI tool usage and demographics.</p>
+</div>
+
+{{ next_button }}
+{% endblock %}

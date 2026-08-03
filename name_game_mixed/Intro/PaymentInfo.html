@@ -1,0 +1,17 @@
+{% block title %}
+{% endblock %}
+
+
+{% block content %}
+
+<script>
+    let completionlink = js_vars.completionLink;
+
+    window.onload = function(){
+        window.location.href=completionlink;
+    }
+</script>
+
+        {% formfields %}
+        {% next_button %}
+{% endblock %}

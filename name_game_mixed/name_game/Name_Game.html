@@ -1,0 +1,233 @@
+{{ block title }}Letter Choice Game - Round {{ round_num }}{{ endblock }}
+
+{{ block content }}
+<style>
+    .letter-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        max-width: 800px;
+        margin: 30px auto;
+    }
+
+    .letter-btn {
+        background: white;
+        border: 3px solid #007bff;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .letter-btn:hover:not(:disabled) {
+        background: #007bff;
+        color: white;
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,123,255,0.3);
+    }
+
+    .letter-btn:disabled {
+        cursor: default;
+        opacity: 0.5;
+    }
+
+    .letter-btn.selected {
+        background: #007bff;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0,123,255,0.4);
+    }
+
+    .letter-btn.highlighted {
+        background: #D1FFBD;
+        border-color: #90EE90;
+    }
+
+    .letter-btn.highlighted.selected {
+        background: #28a745;
+        border-color: #28a745;
+        color: white;
+    }
+
+    .letter-btn.highlighted-alt {
+        background: #FFF3CD;
+        border-color: #FFC107;
+    }
+
+    .letter-btn.highlighted-alt.selected {
+        background: #e0a800;
+        border-color: #e0a800;
+        color: white;
+    }
+
+    .letter-name {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .letter-points {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #28a745;
+    }
+
+    .letter-btn:hover:not(:disabled) .letter-points,
+    .letter-btn.selected .letter-points {
+        color: #fff;
+    }
+
+    .round-info {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+    }
+
+    .ai-reminder {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        border: 2px solid #1976d2;
+        border-radius: 10px;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 0.95rem;
+        color: #1565c0;
+    }
+
+    #waiting-section {
+        display: none;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .waiting-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #007bff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
+<div class="container">
+    <div class="round-info">
+        <h2>Round {{ round_num }} of 14</h2>
+        <p class="lead"><strong>Choose a letter to coordinate with your teammates</strong></p>
+        <p class="text-danger"><strong>All {{ total_players }} players must choose the same letter to earn points!</strong></p>
+    </div>
+
+    <!-- Team composition banner -->
+    <div class="ai-reminder">
+        <strong>Team composition:</strong>
+        {{ num_humans }} human participant{% if num_humans > 1 %}s{% endif %}
+        and {{ num_llms }} AI{% if num_llms > 1 %}s{% endif %}
+    </div>
+
+    <!-- Letter selection -->
+    <div id="choice-section">
+        <div class="letter-grid">
+            {% for letter in "JPRNQFCMXY" %}
+            <button class="letter-btn {% if letter == 'J' %}highlighted{% elif letter == 'M' and round_num > 7 %}highlighted-alt{% elif letter == 'N' and round_num > 7 %}highlighted-alt{% endif %}"
+                    onclick="chooseLetter('{{ letter }}')">
+                <div class="letter-name">{{ letter }}</div>
+                <div class="letter-points">
+                    {% if letter == 'J' %}10 pts
+                    {% elif letter == 'M' and round_num > 7 %}15 pts
+                    {% elif letter == 'N' and round_num > 7 %}15 pts
+                    {% else %}0 pts{% endif %}
+                </div>
+            </button>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Waiting message (shown after player submits) -->
+    <div id="waiting-section">
+        <p style="font-size: 1.4rem;">You chose: <strong id="chosen-display" style="font-size: 1.8rem; color: #007bff;"></strong></p>
+        <div class="waiting-spinner"></div>
+        <p style="font-size: 1.1rem; color: #555;">Waiting for your teammates...</p>
+    </div>
+
+    <!-- Hidden next button — clicked automatically when all players are ready -->
+    <div style="display:none">
+        {{ next_button }}
+    </div>
+</div>
+
+<script>
+    var hasChosen = false;
+    var inactivityTimer = null;
+    var pingInterval = null;
+
+    function clearTimers() {
+        if (inactivityTimer) clearTimeout(inactivityTimer);
+        if (pingInterval) clearInterval(pingInterval);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        liveSend({'type': 'page_loaded'});
+
+        // Fire timeout if player hasn't chosen after 2 minutes
+        inactivityTimer = setTimeout(function() {
+            if (!hasChosen) {
+                console.log('[Timeout] 2 minutes elapsed without choosing — sending player_timeout.');
+                liveSend({'type': 'player_timeout'});
+            }
+        }, 120000);
+
+        // Ping server every 10 seconds to detect if partner has timed out
+        pingInterval = setInterval(function() {
+            liveSend({'type': 'ping'});
+        }, 10000);
+    });
+
+    function chooseLetter(letter) {
+        if (hasChosen) return;
+        hasChosen = true;
+
+        // Highlight selected button
+        document.querySelectorAll('.letter-btn').forEach(function(btn) {
+            btn.disabled = true;
+            if (btn.querySelector('.letter-name').textContent === letter) {
+                btn.classList.add('selected');
+            }
+        });
+
+        // Show waiting section after brief delay
+        setTimeout(function() {
+            document.getElementById('choice-section').style.display = 'none';
+            document.getElementById('chosen-display').textContent = letter;
+            document.getElementById('waiting-section').style.display = 'block';
+        }, 300);
+
+        liveSend({'type': 'letter_chosen', 'letter': letter});
+    }
+
+    function liveRecv(data) {
+        console.log('[liveRecv]', data);
+        if (data.type === 'advance') {
+            clearTimers();
+            document.getElementById('form').submit();
+        } else if (data.type === 'error') {
+            alert('Error: ' + data.msg);
+            hasChosen = false;
+            document.querySelectorAll('.letter-btn').forEach(function(btn) {
+                btn.disabled = false;
+            });
+            document.getElementById('choice-section').style.display = 'block';
+            document.getElementById('waiting-section').style.display = 'none';
+        }
+    }
+</script>
+
+{{ endblock }}

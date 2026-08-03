@@ -1,0 +1,217 @@
+{{ block title }}Evaluating Teammate Strategies{{ endblock }}
+
+{{ block content }}
+
+<style>
+    .container-custom {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .intro-section {
+        background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f0 100%);
+        border-left: 5px solid #17a2b8;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+
+    .intro-section h3 {
+        color: #343a40;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .intro-section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #495057;
+        margin-bottom: 0;
+    }
+
+    .question-section {
+        background: white;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border-left: 4px solid #17a2b8;
+    }
+
+    .question-section label {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #343a40;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .slider-container {
+        margin: 20px 0;
+    }
+
+    .slider-labels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #6c757d;
+        width: 100%;
+    }
+
+    .slider-labels span {
+        flex: 0 0 auto;
+    }
+
+    input[type="range"] {
+        width: 100%;
+        height: 8px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        -webkit-appearance: none;
+        margin: 10px 0;
+    }
+
+    .slider-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #17a2b8;
+        cursor: pointer;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #17a2b8;
+        cursor: pointer;
+        border: none;
+    }
+</style>
+
+<div class="container-custom">
+    <div class="intro-section">
+        <h3>Evaluating Teammate Rules</h3>
+        <p>Now, please consider how you would feel if one of your teammates in the game followed these rules.</p>
+    </div>
+
+    <form method="post" id="teammateForm">
+        <div class="question-section">
+            <label>Think about the game you just played. Imagine one of your teammates always chose the letter J throughout all 14 rounds of the game. How morally blameworthy/praiseworthy would it be for your teammate to do that?</label>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                <strong>Scale:</strong> 0 = Extremely blameworthy, 100 = Extremely praiseworthy
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px; margin-top: 10px;">
+                <input type="range" id="slider_teammate_always_j" min="0" max="100" step="1" style="flex: 1;">
+                <input type="hidden" name="teammate_moral_always_j" id="hidden_teammate_always_j" value="">
+                <div style="min-width: 80px; text-align: center;">
+                    <span id="value_teammate_always_j" style="font-weight: bold; font-size: 16px; color: #999;">Move slider</span>
+                </div>
+            </div>
+            <div class="slider-labels">
+                <span>Extremely blameworthy (0)</span>
+                <span>Extremely praiseworthy (100)</span>
+            </div>
+        </div>
+
+        <div class="question-section">
+            <label>Think about the game you just played. Imagine one of your teammates chose J for the first 7 rounds, then switched to M for rounds 8-14. How morally blameworthy/praiseworthy would it be for your teammate to do that?</label>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                <strong>Scale:</strong> 0 = Extremely blameworthy, 100 = Extremely praiseworthy
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px; margin-top: 10px;">
+                <input type="range" id="slider_teammate_j_then_m" min="0" max="100" step="1" style="flex: 1;">
+                <input type="hidden" name="teammate_moral_j_then_m" id="hidden_teammate_j_then_m" value="">
+                <div style="min-width: 80px; text-align: center;">
+                    <span id="value_teammate_j_then_m" style="font-weight: bold; font-size: 16px; color: #999;">Move slider</span>
+                </div>
+            </div>
+            <div class="slider-labels">
+                <span>Extremely blameworthy (0)</span>
+                <span>Extremely praiseworthy (100)</span>
+            </div>
+        </div>
+
+        <div class="question-section">
+            <label>Think about the game you just played. Imagine one of your teammates chose J for the first 7 rounds, then switched to N for rounds 8-14. How morally blameworthy/praiseworthy would it be for your teammate to do that?</label>
+            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+                <strong>Scale:</strong> 0 = Extremely blameworthy, 100 = Extremely praiseworthy
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px; margin-top: 10px;">
+                <input type="range" id="slider_teammate_j_then_n" min="0" max="100" step="1" style="flex: 1;">
+                <input type="hidden" name="teammate_moral_j_then_n" id="hidden_teammate_j_then_n" value="">
+                <div style="min-width: 80px; text-align: center;">
+                    <span id="value_teammate_j_then_n" style="font-weight: bold; font-size: 16px; color: #999;">Move slider</span>
+                </div>
+            </div>
+            <div class="slider-labels">
+                <span>Extremely blameworthy (0)</span>
+                <span>Extremely praiseworthy (100)</span>
+            </div>
+        </div>
+
+        <div id="error-message" style="display: none; color: #dc3545; font-weight: bold; text-align: center; margin: 20px 0; padding: 15px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 5px;">
+            Please answer all questions by moving each slider before continuing.
+        </div>
+
+        <div class="text-center mt-4">
+            {{ next_button }}
+        </div>
+    </form>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Track which sliders have been interacted with
+    const sliderData = [
+        {slider: 'slider_teammate_always_j', hidden: 'hidden_teammate_always_j', value: 'value_teammate_always_j', moved: false},
+        {slider: 'slider_teammate_j_then_m', hidden: 'hidden_teammate_j_then_m', value: 'value_teammate_j_then_m', moved: false},
+        {slider: 'slider_teammate_j_then_n', hidden: 'hidden_teammate_j_then_n', value: 'value_teammate_j_then_n', moved: false}
+    ];
+
+    sliderData.forEach(function(item) {
+        const slider = document.getElementById(item.slider);
+        const hiddenInput = document.getElementById(item.hidden);
+        const valueDisplay = document.getElementById(item.value);
+
+        // Update on input
+        slider.addEventListener('input', function() {
+            item.moved = true;
+            hiddenInput.value = this.value;
+            valueDisplay.textContent = this.value;
+            valueDisplay.style.color = '#17a2b8';
+        });
+    });
+
+    // Form validation
+    const form = document.getElementById('teammateForm');
+    const errorMessage = document.getElementById('error-message');
+
+    form.addEventListener('submit', function(event) {
+        const allMoved = sliderData.every(function(item) { return item.moved; });
+
+        if (!allMoved) {
+            event.preventDefault();
+            errorMessage.style.display = 'block';
+            errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return false;
+        }
+
+        errorMessage.style.display = 'none';
+        return true;
+    });
+});
+</script>
+
+{{ endblock }}

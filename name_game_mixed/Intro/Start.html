@@ -1,0 +1,225 @@
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .ready-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .main-title {
+        color: #28a745;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .content-flow {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #495057;
+    }
+
+    .success-box {
+        background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+        border: 3px solid #28a745;
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(40, 167, 69, 0.2);
+    }
+
+    .success-box p {
+        font-weight: bold;
+        color: #155724;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    .main-instruction {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        border: 3px solid #2196f3;
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        margin: 30px 0;
+        box-shadow: 0 5px 15px rgba(33, 150, 243, 0.2);
+    }
+
+    .main-instruction p {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #0d47a1;
+        margin: 0;
+    }
+
+    .checklist-section {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        margin: 30px 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        border: 2px solid #dee2e6;
+    }
+
+    .checklist-section h3 {
+        color: #343a40;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        border-bottom: 3px solid #007bff;
+        padding-bottom: 10px;
+    }
+
+    .checklist-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .checklist-section li {
+        background: rgba(0,123,255,0.1);
+        border-left: 5px solid #007bff;
+        padding: 15px 20px;
+        margin: 15px 0;
+        border-radius: 0 10px 10px 0;
+        font-weight: 500;
+        font-size: 1.1rem;
+        position: relative;
+    }
+
+    .checklist-section li::before {
+        content: '✓';
+        color: #28a745;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+
+    .warning-box {
+        background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+        border: 3px solid #dc3545;
+        border-radius: 15px;
+        padding: 25px;
+        margin: 30px 0;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(220, 53, 69, 0.2);
+    }
+
+    .warning-box p {
+        font-weight: bold;
+        color: #721c24;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .warning-icon {
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+
+    .final-reminder {
+        background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        border: 3px solid #ffc107;
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        margin: 30px 0;
+        box-shadow: 0 5px 15px rgba(255, 193, 7, 0.2);
+    }
+
+    .final-reminder p {
+        font-weight: bold;
+        color: #856404;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    .continue-btn {
+        background: #28a745;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+    }
+
+    .continue-btn:hover {
+        background: #218838;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+    }
+
+    @media (max-width: 768px) {
+        .ready-container {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .main-title {
+            font-size: 1.8rem;
+        }
+
+        .content-flow {
+            font-size: 1.1rem;
+        }
+
+        .checklist-section li {
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<div class="ready-container">
+    <h1 class="main-title">Great! You're Ready to Start</h1>
+
+    <div class="content-flow">
+        <div class="success-box">
+            <p>🎉 Congratulations! You passed the attention checks.</p>
+        </div>
+
+        <div class="main-instruction">
+            <p>Once you click "Continue," you will be matched with your group and must start playing immediately.</p>
+        </div>
+
+        <div class="checklist-section">
+            <h3>Please ensure you:</h3>
+            <ul>
+                <li>Have enough time to complete all 14 rounds (approximately 10 minutes)</li>
+                <li>Are ready to begin the game right away</li>
+                <li>Will not leave your group members waiting</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <p><span class="warning-icon">⚠️</span>Warning: If you or any group member become inactive for 2 minutes or longer, the game will automatically end for all players and you will be taken to the final survey.</p>
+        </div>
+
+        <div class="final-reminder">
+            <p>Do not continue unless you are ready to start the experiment now.</p>
+        </div>
+    </div>
+
+    {{ next_button }}
+</div>
+
+{% endblock %}

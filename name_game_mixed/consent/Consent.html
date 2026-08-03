@@ -1,0 +1,186 @@
+{{ block title }}Participant Information Leaflet{{ endblock }}
+
+{{ block content }}
+<style>
+    .pil-container {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    .pil-container h1 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    .pil-container .investigators {
+        text-align: center;
+        color: #555;
+        margin-bottom: 28px;
+        font-size: 0.95rem;
+    }
+
+    .pil-container p {
+        margin-bottom: 14px;
+        text-align: justify;
+    }
+
+    .pil-container a {
+        color: #1a73e8;
+        word-break: break-all;
+    }
+
+    .consent-section {
+        margin-top: 36px;
+        border-top: 2px solid #1976d2;
+        padding-top: 24px;
+    }
+
+    .consent-section h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .consent-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 16px;
+        padding: 12px 16px;
+        border: 1px solid #dce3ec;
+        border-radius: 8px;
+        background: #f8fafc;
+        cursor: pointer;
+    }
+
+    .consent-item:hover {
+        background: #eef4fb;
+        border-color: #1976d2;
+    }
+
+    .consent-item input[type="checkbox"] {
+        margin-top: 3px;
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        accent-color: #1976d2;
+    }
+
+    .consent-item label {
+        cursor: pointer;
+        margin: 0;
+        font-size: 0.97rem;
+    }
+
+    .consent-item-num {
+        font-weight: bold;
+        flex-shrink: 0;
+        color: #1976d2;
+        min-width: 24px;
+    }
+
+    .complaints-box {
+        border: 1px solid #b0bec5;
+        border-radius: 8px;
+        background: #f5f7f9;
+        padding: 18px 22px;
+        margin: 20px 0;
+    }
+
+    .complaints-box p {
+        margin-bottom: 10px;
+    }
+
+    .complaints-box p:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
+<div class="pil-container">
+
+    <h1>Participant Information Leaflet</h1>
+    <p class="investigators">
+        <strong>Study title:</strong> Human-AI Coordination Games<br>
+        <strong>Investigators:</strong> Anita Braga, Rachel Calcott, Nicholas Chater
+    </p>
+
+    <p>Welcome and thank you for your interest in this research study! The project is a research study about human-LLM cooperation. This experiment will take approximately 10 minutes, and you will receive a £2.50 reward on Prolific just for taking part. Additionally, you can earn up to a £1.75 bonus payment based on your game performance. Across 14 rounds, you will be asked to play a coordination game with your teammates, who will be either humans or LLMs.</p>
+
+    <p>The research is funded by European Union's Horizon Europe research and innovation programme under grant agreement No. 101120763, TANGO.</p>
+
+    <p>Your participation is completely voluntary. You can withdraw at any time, and for any reason, simply by closing your browser.</p>
+
+    <p>No identifiable data will be collected from you as part of this study. This means that once your responses have been submitted to the research team, it will not be possible to withdraw this data as your individual responses cannot be identified.</p>
+
+    <p>Data will be securely stored on University of Warwick computers and will be processed only for the purpose of scientific analysis. Access to the data will be restricted to the investigators listed above. Summaries may be presented at conferences and included in scientific publications. Data will be reviewed on completion of the research, in line with the University of Warwick data retention policy.</p>
+
+    <p>Please refer to the University of Warwick Research Privacy Notice which is available here: <a href="https://warwick.ac.uk/services/idc/dataprotection/privacynotices/researchprivacynotice" target="_blank">https://warwick.ac.uk/services/idc/dataprotection/privacynotices/researchprivacynotice</a> or by contacting the Information and Data Compliance Team at <a href="mailto:infocompliance@warwick.ac.uk">infocompliance@warwick.ac.uk</a>.</p>
+
+    <p>This study has been reviewed and given favourable opinion by the University of Warwick's Humanities and Social Sciences Research Ethics Committee (HSSREC), reference number: HSSREC 279/25-26</p>
+
+    <p>If you require further information, please contact Anita Braga at <a href="mailto:anita.braga@warwick.ac.uk">anita.braga@warwick.ac.uk</a>.</p>
+
+    <div class="complaints-box">
+        <p><strong>Who should I contact if I wish to make a complaint?</strong><br>
+        Any complaint should be addressed to the person below, who is a senior University of Warwick official entirely independent of this study:</p>
+
+        <p style="line-height: 1.9;">
+            Head of Research Governance<br>
+            Research &amp; Impact Services<br>
+            University House<br>
+            University of Warwick<br>
+            Coventry CV4 8UW<br>
+            Email: <a href="mailto:researchgovernance@warwick.ac.uk">researchgovernance@warwick.ac.uk</a><br>
+            Tel: 02476 575733
+        </p>
+
+        <p>If you wish to raise a complaint on how we have handled your personal data, you can contact our Data Protection Officer who will investigate the matter: <a href="mailto:DPO@warwick.ac.uk">DPO@warwick.ac.uk</a>.</p>
+
+        <p>If you are not satisfied with our response or believe we are processing your personal data in a way that is not lawful you can complain to the Information Commissioner's Office (ICO).</p>
+    </div>
+
+    <p>Thank you for taking the time to read this concise Participant Information Leaflet.</p>
+
+    <!-- Consent checkboxes -->
+    <div class="consent-section">
+        <h2>I have read the above and confirm the following:</h2>
+        <p style="margin-bottom: 20px; color: #555;">Please tick all of the boxes below to proceed to the study.</p>
+
+        {% for num, text in consent_items %}
+        <div class="consent-item">
+            <span class="consent-item-num">{{ num }}.</span>
+            <input class="consent-cb" type="checkbox" id="consent_{{ num }}">
+            <label for="consent_{{ num }}">{{ text }}</label>
+        </div>
+        {% endfor %}
+
+        <input type="hidden" name="consent_given" id="consent_given_val" value="no">
+
+        <p style="margin-top: 16px; color: #555; font-size: 0.9rem;">
+            If you do not wish to participate, simply close your browser or leave the checkboxes unchecked and click Continue.
+        </p>
+    </div>
+
+    {{ next_button }}
+</div>
+
+<script>
+    document.querySelectorAll('.consent-cb').forEach(function(cb) {
+        cb.addEventListener('change', function() {
+            var allChecked = Array.from(document.querySelectorAll('.consent-cb')).every(function(c) {
+                return c.checked;
+            });
+            document.getElementById('consent_given_val').value = allChecked ? 'yes' : 'no';
+        });
+    });
+</script>
+
+{{ endblock }}

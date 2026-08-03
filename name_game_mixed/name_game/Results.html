@@ -1,0 +1,166 @@
+{{ block title }}Results - Round {{ player.round_number }}{{ endblock }}
+{{ block content }}
+
+<style>
+    .otree-timer {
+        display: none;
+    }
+
+    .points-card {
+        background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        border: none;
+        border-radius: 15px;
+        color: white;
+        margin: 20px 0;
+    }
+
+    .choice-card {
+        border-radius: 15px;
+        border: none;
+        margin: 10px 0;
+    }
+
+    .new-scoring-alert {
+        background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        border: 3px solid #ffc107;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px 0;
+        text-align: center;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+    }
+
+    .player-choices-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin: 15px 0;
+    }
+
+    @media (max-width: 576px) {
+        .player-choices-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .player-choice-item {
+        border-radius: 10px;
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+    .player-choice-item.matched {
+        background: #e8f5e9;
+        border: 2px solid #388e3c;
+    }
+
+    .player-choice-item.no-match {
+        background: #fff3e0;
+        border: 2px solid #e65100;
+    }
+
+    .player-choice-item .player-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #495057;
+    }
+
+    .identity-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 20px;
+        margin-bottom: 6px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .badge-human {
+        background: #1565c0;
+        color: #ffffff;
+    }
+
+    .badge-ai {
+        background: #6a0dad;
+        color: #ffffff;
+    }
+
+    .you-tag {
+        font-size: 0.75rem;
+        color: #888;
+        font-style: italic;
+    }
+
+    .player-choice-item .choice-letter {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+
+<div class="container">
+   <div class="row justify-content-center">
+       <div class="col-md-10">
+           <h3 class="text-center">Round {{ round_number }} Results</h3>
+
+           <div class="row justify-content-center">
+               <div class="col-md-6">
+                   <div class="card choice-card bg-primary text-white">
+                       <div class="card-body text-center">
+                           <h5>Your Choice</h5>
+                           <h2 style="font-size: 2.5rem;">{{ my_choice }}</h2>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="alert {% if all_matched %}alert-success{% else %}alert-warning{% endif %} text-center mt-3">
+               <strong>All {{ total_players }} Players' Choices:</strong>
+               <div class="player-choices-grid" style="margin-top: 15px;">
+                   {% for item in choices_with_labels %}
+                   <div class="player-choice-item {% if all_matched %}matched{% else %}no-match{% endif %}">
+                       <div>
+                           <span class="identity-badge {% if item.player_type == 'Human' %}badge-human{% else %}badge-ai{% endif %}">
+                               {{ item.player_type }}
+                           </span>
+                           {% if item.is_me %}<span class="you-tag">(you)</span>{% endif %}
+                       </div>
+                       <div class="player-label">Player {{ item.player_num }}</div>
+                       <div class="choice-letter">{{ item.choice }}</div>
+                   </div>
+                   {% endfor %}
+               </div>
+               <br>
+               <small style="font-size: 1rem;"><strong>All {{ total_players }} players must choose the same letter to earn points</strong></small>
+           </div>
+
+           <div class="card points-card">
+               <div class="card-body text-center">
+                   <div class="row">
+                       <div class="col-md-6">
+                           <h5>Round {{ round_number }} Points</h5>
+                           <h3>{{ my_points }}</h3>
+                       </div>
+                       <div class="col-md-6">
+                           <h5>Total Points</h5>
+                           <h3>{{ total_points }}</h3>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="text-center mt-4">
+               {{ next_button }}
+           </div>
+       </div>
+   </div>
+</div>
+{{ endblock }}

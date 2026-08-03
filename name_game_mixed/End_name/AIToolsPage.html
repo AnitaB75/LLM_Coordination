@@ -1,0 +1,163 @@
+{{ block title }}Survey{{ endblock }}
+
+{{ block content }}
+<style>
+    .survey-container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .question-label {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 14px;
+        color: #333;
+    }
+
+    .tool-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+
+    .tool-list li {
+        padding: 8px 12px;
+        border: 1px solid #dce3ec;
+        border-radius: 6px;
+        margin-bottom: 6px;
+        background: #f8fafc;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .tool-list li:hover {
+        background: #eef4fb;
+        border-color: #1976d2;
+    }
+
+    .tool-list input[type="checkbox"] {
+        width: 17px;
+        height: 17px;
+        flex-shrink: 0;
+        accent-color: #1976d2;
+        cursor: pointer;
+    }
+
+    .tool-list label {
+        margin: 0;
+        cursor: pointer;
+        flex-grow: 1;
+    }
+
+    #other-text-input {
+        display: none;
+        margin-top: 6px;
+        margin-left: 27px;
+        width: calc(100% - 27px);
+        padding: 6px 10px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        font-size: 0.95rem;
+    }
+</style>
+
+<div class="survey-container">
+    <p class="question-label">What generative AI tools do you use? (Check all that apply)</p>
+
+    <!-- Hidden input storing the JSON list — populated by JavaScript -->
+    <input type="hidden" name="ai_tools" id="ai_tools_value" value="[]">
+
+    <ul class="tool-list" id="tool-list">
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_chatgpt" value="ChatGPT (OpenAI)">
+            <label for="cb_chatgpt">ChatGPT (OpenAI)</label>
+        </li>
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_claude" value="Claude (Anthropic)">
+            <label for="cb_claude">Claude (Anthropic)</label>
+        </li>
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_gemini" value="Gemini (Google)">
+            <label for="cb_gemini">Gemini (Google)</label>
+        </li>
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_mistral" value="Mistral (Mistral AI)">
+            <label for="cb_mistral">Mistral (Mistral AI)</label>
+        </li>
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_dalle" value="DALL-E (OpenAI)">
+            <label for="cb_dalle">DALL-E (OpenAI)</label>
+        </li>
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_copilot" value="GitHub Copilot">
+            <label for="cb_copilot">GitHub Copilot</label>
+        </li>
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_midjourney" value="MidJourney">
+            <label for="cb_midjourney">MidJourney</label>
+        </li>
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_deepseek" value="DeepSeek">
+            <label for="cb_deepseek">DeepSeek</label>
+        </li>
+        <li>
+            <input type="checkbox" class="tool-cb" id="cb_other" value="Other">
+            <label for="cb_other">Other (please specify)</label>
+        </li>
+        <input type="text" id="other-text-input" placeholder="Please specify...">
+        <li style="border-top: 2px solid #ccc; margin-top: 8px;">
+            <input type="checkbox" id="cb_none" value="None">
+            <label for="cb_none">None</label>
+        </li>
+    </ul>
+
+    {{ next_button }}
+</div>
+
+<script>
+    function updateValue() {
+        var selected = [];
+        document.querySelectorAll('.tool-cb:checked').forEach(function(cb) {
+            if (cb.value === 'Other') {
+                var txt = document.getElementById('other-text-input').value.trim();
+                selected.push(txt ? 'Other: ' + txt : 'Other');
+            } else {
+                selected.push(cb.value);
+            }
+        });
+        if (document.getElementById('cb_none').checked) {
+            selected = ['None'];
+        }
+        document.getElementById('ai_tools_value').value = JSON.stringify(selected);
+    }
+
+    // Tool checkboxes: deselect None when any tool is checked
+    document.querySelectorAll('.tool-cb').forEach(function(cb) {
+        cb.addEventListener('change', function() {
+            document.getElementById('cb_none').checked = false;
+            if (cb.id === 'cb_other') {
+                document.getElementById('other-text-input').style.display =
+                    cb.checked ? 'block' : 'none';
+            }
+            updateValue();
+        });
+    });
+
+    // Other text input: update value on typing
+    document.getElementById('other-text-input').addEventListener('input', updateValue);
+
+    // None checkbox: deselect all tools
+    document.getElementById('cb_none').addEventListener('change', function() {
+        if (this.checked) {
+            document.querySelectorAll('.tool-cb').forEach(cb => cb.checked = false);
+            document.getElementById('other-text-input').style.display = 'none';
+        }
+        updateValue();
+    });
+</script>
+
+{{ endblock }}
