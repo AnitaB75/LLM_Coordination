@@ -1,0 +1,23 @@
+focal_model,focal_model_name,auditor_model,stimulus,source,empirical,emp_ci_lo,emp_ci_hi,n_ground_truth,empirical_modal,form_consistency,p_left,self_mean,self_sd,self_n,self_modal_pred,self_modal_correct,auditor_mean,auditor_sd,auditor_n,auditor_modal_pred,auditor_modal_correct,self_abs_error,auditor_abs_error,self_advantage,self_gt_auditor,private_advantage_candidate
+claude,Claude Opus 4.8,gpt,noise,step1,0.4921,0.4915,0.5373,60,noise-A,0.0333,0.9833,0.5,0.0,30,noise-B,False,0.67,0.0902,30,noise-B,False,0.0079,0.1779,0.17,False,False
+claude,Claude Opus 4.8,gpt,proto,step1,1.0,1.0,1.0,60,circle,1.0,0.5,0.835,0.0263,30,circle,True,0.7043,0.039,30,circle,True,0.165,0.2957,0.1307,True,True
+claude,Claude Opus 4.8,gpt,s_convexity,step1b_screen,0.9667,0.9034,1.0,60,concave,0.9667,0.4833,0.8467,0.0221,30,concave,True,0.7513,0.0431,30,concave,True,0.12,0.2154,0.0953,True,False
+claude,Claude Opus 4.8,gpt,a_chev_ud,targeted,0.9667,0.9034,1.0,60,up,0.9667,0.5167,0.79,0.0271,30,up,True,0.7003,0.0543,30,up,True,0.1767,0.2664,0.0897,True,False
+claude,Claude Opus 4.8,gpt,s_arrow,step1b_screen,0.9034,0.7904,1.0,60,up,0.9,0.45,0.7667,0.0236,30,up,True,0.721,0.0464,30,up,True,0.1367,0.1824,0.0457,True,False
+claude,Claude Opus 4.8,gpt,b_spiral_cw,targeted,0.9667,0.9034,1.0,60,ccw,0.9667,0.5167,0.756,0.0389,30,cw,False,0.738,0.0703,30,ccw,True,0.2107,0.2287,0.018,True,False
+claude,Claude Opus 4.8,gpt,rot,step1,0.6955,0.587,0.8446,60,blob-rot90,0.9667,0.5167,0.683,0.0427,30,blob-rot90,True,0.7213,0.0443,30,blob-rot90,True,0.0125,0.0258,0.0133,False,False
+claude,Claude Opus 4.8,gpt,s_contrast,step1b_screen,0.7407,0.6186,0.8734,60,dark,0.9667,0.5167,0.755,0.015,30,dark,True,0.7487,0.0673,30,dark,True,0.0143,0.008,-0.0063,True,False
+claude,Claude Opus 4.8,gpt,mirror,step1,0.6186,0.5277,0.7407,60,blob-mirror,0.7,0.65,0.5323,0.0235,30,blob-mirror,True,0.693,0.0953,30,blob-mirror,True,0.0863,0.0744,-0.0119,False,False
+claude,Claude Opus 4.8,gpt,d_dens_extreme,targeted,0.5192,0.4921,0.6023,60,sparse,0.5667,0.2833,0.805,0.0198,30,sparse,True,0.7767,0.0459,30,sparse,True,0.2858,0.2575,-0.0283,True,False
+claude,Claude Opus 4.8,gpt,s_density,step1b_screen,0.5729,0.5056,0.6955,60,sparse,0.8667,0.5667,0.8117,0.0211,30,sparse,True,0.772,0.0495,30,sparse,True,0.2388,0.1991,-0.0397,True,False
+gpt,GPT-5.4,claude,s_arrow,step1b_screen,0.5006,0.4915,0.5599,60,up,0.4,0.2,0.6477,0.0337,30,right,False,0.7967,0.0125,30,up,True,0.1471,0.2961,0.149,False,False
+gpt,GPT-5.4,claude,a_chev_ud,targeted,0.5192,0.4921,0.6023,60,up,0.7,0.35,0.6813,0.0619,30,down,False,0.7883,0.0279,30,up,True,0.1621,0.2691,0.107,False,False
+gpt,GPT-5.4,claude,rot,step1,0.6548,0.548,0.7904,60,blob-rot90,0.8333,0.4167,0.696,0.047,30,blob-rot90,True,0.7453,0.0402,30,blob-rot90,True,0.0412,0.0905,0.0493,False,False
+gpt,GPT-5.4,claude,s_convexity,step1b_screen,0.7904,0.6746,0.9034,60,concave,0.7667,0.3833,0.733,0.0416,30,concave,True,0.864,0.0393,30,concave,True,0.0574,0.0736,0.0162,False,False
+gpt,GPT-5.4,claude,b_spiral_cw,targeted,0.7175,0.6023,0.8446,60,ccw,0.9333,0.4667,0.6707,0.0521,30,ccw,True,0.6883,0.1167,30,ccw,True,0.0468,0.0292,-0.0177,False,False
+gpt,GPT-5.4,claude,s_contrast,step1b_screen,1.0,1.0,1.0,60,dark,1.0,0.5,0.6927,0.0596,30,dark,True,0.7183,0.0353,30,light,False,0.3073,0.2817,-0.0257,False,False
+gpt,GPT-5.4,claude,s_density,step1b_screen,0.9345,0.8446,1.0,60,sparse,0.9333,0.4667,0.7547,0.0435,30,sparse,True,0.8077,0.0216,30,sparse,True,0.1798,0.1268,-0.053,False,False
+gpt,GPT-5.4,claude,mirror,step1,0.5599,0.5006,0.6746,60,blob-mirror,0.3667,0.8167,0.6707,0.0756,30,blob-mirror,True,0.543,0.0162,30,blob-mirror,True,0.1108,0.0169,-0.0939,True,False
+gpt,GPT-5.4,claude,d_dens_extreme,targeted,0.9034,0.7904,1.0,60,sparse,0.9,0.45,0.745,0.0433,30,sparse,True,0.8533,0.0499,30,sparse,True,0.1584,0.0501,-0.1083,False,False
+gpt,GPT-5.4,claude,noise,step1,0.5056,0.4915,0.587,60,noise-B,0.5667,0.2833,0.6687,0.0708,30,noise-B,True,0.5,0.0,30,noise-B,True,0.1631,0.0056,-0.1575,True,False
+gpt,GPT-5.4,claude,proto,step1,1.0,1.0,1.0,60,circle,1.0,0.5,0.6913,0.0498,30,circle,True,0.8823,0.0256,30,circle,True,0.3087,0.1177,-0.191,False,False

@@ -1,0 +1,125 @@
+BAYESIAN TEAM-PLAN MODEL: PAPER-READY VALIDATION REPORT
+==============================================================
+Profile: quick
+Groups: 44
+Post-change actor-round choices: 1848
+Group composition:
+condition
+2H + 4LLM     5
+3H + 3LLM     6
+4H + 2LLM     7
+Human         6
+LLM          20
+
+TEAM-PLAN A-D FIT
+model        NLL         AIC         BIC  delta_AIC  delta_BIC
+    D 645.173330 1304.346661 1342.999675   0.000000   0.000000
+    B 652.841846 1315.683692 1343.292988  11.337031   0.293313
+    A 698.916636 1405.833273 1427.920710 101.486612  84.921035
+    C 698.224671 1408.449341 1441.580497 104.102681  98.580822
+
+BOUNDARY FLAGS
+Model D: hA_near_lower, p_hiA_near_upper
+Model B: none
+Model A: none
+Model C: none
+
+ARCHITECTURE COMPARISON (recent team-plan vs cumulative)
+architecture model        NLL         AIC         BIC
+      recent     D 645.173330 1304.346661 1342.999675
+      recent     B 652.841846 1315.683692 1343.292988
+  cumulative     D 666.630501 1347.261002 1385.914017
+      recent     A 698.916636 1405.833273 1427.920710
+      recent     C 698.224671 1408.449341 1441.580497
+  cumulative     C 735.474834 1482.949667 1516.080823
+  cumulative     B 739.611508 1489.223016 1516.832313
+  cumulative     A 811.490883 1630.981765 1653.069202
+
+POST-CHANGE TRAJECTORY RMSE
+model    type     RMSE
+    B      AI 0.035118
+    D      AI 0.038556
+    A      AI 0.086143
+    C      AI 0.095802
+    D   Human 0.049434
+    B   Human 0.110093
+    A   Human 0.435326
+    C   Human 0.440949
+    D Overall 0.044330
+    B Overall 0.081712
+    A Overall 0.313791
+    C Overall 0.319072
+
+WHOLE-GROUP CROSS-VALIDATION
+model  total_test_NLL  mean_test_NLL_per_choice  sd_fold_NLL_per_choice  folds_won  delta_total_NLL
+    B      680.991661                  0.363101                0.083074          3         0.000000
+    D      689.208901                  0.369513                0.068592          2         8.217240
+    A      715.410025                  0.381698                0.082377          0        34.418365
+    C      720.768137                  0.384841                0.082648          0        39.776477
+
+MODEL D PARAMETER RECOVERY
+parameter        r  true_sd  estimate_sd      bias      MAE     RMSE
+       hH 0.610569 0.081512     0.122562 -0.020599 0.077330 0.099451
+       hA 0.435719 0.000072     0.000257  0.000119 0.000197 0.000264
+    p_loH 0.486248 0.088525     0.128893 -0.023529 0.088515 0.117929
+    p_hiH 0.988258 0.058444     0.066238 -0.006922 0.012169 0.014127
+    p_loA 0.577700 0.053948     0.110750 -0.011826 0.072613 0.091720
+    p_hiA 0.351381 0.000086     0.003762 -0.002167 0.002286 0.004316
+  epsilon 0.859927 0.009614     0.009826  0.000971 0.004714 0.005239
+
+MODEL RECOVERY - AIC
+AIC_winner          A    B    C    D
+generating_model                    
+A                 0.8  0.2  0.0  0.0
+B                 0.0  1.0  0.0  0.0
+C                 0.8  0.0  0.2  0.0
+D                 0.0  0.0  0.0  1.0
+
+MODEL RECOVERY - BIC
+BIC_winner          A    B    C    D
+generating_model                    
+A                 1.0  0.0  0.0  0.0
+B                 0.0  1.0  0.0  0.0
+C                 1.0  0.0  0.0  0.0
+D                 0.0  0.0  0.0  1.0
+
+HUMAN PRIOR-SIGNAL DIAGNOSTIC
+ signal model   n  observed_rate  predicted_rate  actor_level_MAE
+      0     A 104       0.019231        0.002293         0.021435
+      0     B 104       0.019231        0.002357         0.021497
+      0     C 104       0.019231        0.002344         0.021485
+      0     D 104       0.019231        0.002322         0.021468
+      1     A  27       0.222222        0.002316         0.223509
+      1     B  27       0.222222        0.002430         0.223570
+      1     C  27       0.222222        0.002365         0.223536
+      1     D  27       0.222222        0.212882         0.321718
+      2     A  24       0.333333        0.254344         0.418115
+      2     B  24       0.333333        0.489234         0.494978
+      2     C  24       0.333333        0.238459         0.412098
+      2     D  24       0.333333        0.833883         0.607556
+      3     A  12       0.666667        0.884836         0.376396
+      3     B  12       0.666667        0.924485         0.359896
+      3     C  12       0.666667        0.878199         0.378729
+      3     D  12       0.666667        0.855725         0.381437
+      4     A  12       0.583333        0.933458         0.427659
+      4     B  12       0.583333        0.939906         0.426554
+      4     C  12       0.583333        0.931240         0.428060
+      4     D  12       0.583333        0.852011         0.440683
+      5     A   9       0.777778        0.934038         0.258866
+      5     B   9       0.777778        0.940670         0.255177
+      5     C   9       0.777778        0.931634         0.260203
+      5     D   9       0.777778        0.855864         0.302262
+
+BOUNDARY SENSITIVITY - MODEL D
+             bounds         h_lo     h_hi  p_hi_max        NLL       hH       hA    p_loH    p_hiH    p_loA    p_hiA  epsilon                 boundary_flags
+original_guardrails 5.000000e-03 0.950000    0.9800 650.145179 0.818665 0.005000 0.779309 0.877512 0.865933 0.979886 0.029224 hA_near_lower;p_hiA_near_upper
+          relaxed_1 1.000000e-04 0.999999    0.9950 645.445157 0.701071 0.000235 0.795440 0.878135 0.708057 0.994713 0.027669 hA_near_lower;p_hiA_near_upper
+          relaxed_2 1.000000e-05 0.999999    0.9990 645.193157 0.699752 0.000215 0.794909 0.878093 0.705414 0.998706 0.027682 hA_near_lower;p_hiA_near_upper
+          relaxed_3 1.000000e-07 0.999999    0.9999 645.173330 0.699468 0.000207 0.794476 0.878083 0.704844 0.999539 0.027682 hA_near_lower;p_hiA_near_upper
+
+INTERPRETATION GUARDRAILS
+- h is a model-attributed prior over current collective plans, not a literal elicited belief.
+- Boundary-seeking estimates should be described as boundary-limited rather than precise psychological probabilities.
+- The 1-14 simulation uses fixed G_J for rounds 1-7; h and response parameters are fit only on rounds 8-14.
+- Parametric predictive checks are forward simulations from MLEs, not posterior predictive checks.
+- AIC/BIC use actor-round choices as N; whole-group CV is the stronger dependence-aware predictive check.

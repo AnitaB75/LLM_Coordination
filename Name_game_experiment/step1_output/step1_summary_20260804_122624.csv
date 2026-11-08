@@ -1,0 +1,13 @@
+model,model_id,stimulus_pair,n_valid,option_1,n_option_1,p_option_1,option_2,n_option_2,p_option_2,modal_option,modal_share,modal_tied,match_unbiased,match_unbiased_lo,match_unbiased_hi,match_plugin,entropy_bits,entropy_normalized,match_unbiased_position,match_position_lo,match_position_hi,p_position_A,n_AB_variant,n_BA_variant
+gpt,gpt-5.4,proto,60,circle,60,1.0,square,0,0.0,circle,1.0,False,1.0,1.0,1.0,1.0,0.0,0.0,0.4915,0.4915,0.5277,0.5,30,30
+gpt,gpt-5.4,nd2,60,p2a,0,0.0,p2b,60,1.0,p2b,1.0,False,1.0,1.0,1.0,1.0,0.0,0.0,0.4915,0.4915,0.5373,0.5,30,30
+gpt,gpt-5.4,inkblot,60,ib-A,59,0.9833,ib-B,1,0.0167,ib-A,0.9833,False,0.9667,0.9034,1.0,0.9672,0.1223,0.1223,0.4921,0.4915,0.5373,0.4833,30,30
+gpt,gpt-5.4,rot,60,blob,20,0.3333,blob-rot90,40,0.6667,blob-rot90,0.6667,False,0.548,0.4966,0.6548,0.5556,0.9183,0.9183,0.6023,0.5192,0.7175,0.2667,30,30
+gpt,gpt-5.4,noise,60,noise-A,8,0.1333,noise-B,52,0.8667,noise-B,0.8667,False,0.765,0.6548,0.9034,0.7689,0.5665,0.5665,0.5277,0.4921,0.6186,0.3667,30,30
+gpt,gpt-5.4,mirror,60,blob,16,0.2667,blob-mirror,44,0.7333,blob-mirror,0.7333,False,0.6023,0.5192,0.7407,0.6089,0.8366,0.8366,0.548,0.4966,0.6548,0.6667,30,30
+claude,claude-opus-4-8,proto,60,circle,60,1.0,square,0,0.0,circle,1.0,False,1.0,1.0,1.0,1.0,0.0,0.0,0.4915,0.4915,0.5373,0.5,30,30
+claude,claude-opus-4-8,nd2,60,p2a,0,0.0,p2b,60,1.0,p2b,1.0,False,1.0,1.0,1.0,1.0,0.0,0.0,0.4915,0.4915,0.5373,0.5,30,30
+claude,claude-opus-4-8,inkblot,60,ib-A,53,0.8833,ib-B,7,0.1167,ib-A,0.8833,False,0.7904,0.6746,0.9345,0.7939,0.5197,0.5197,0.5192,0.4921,0.6023,0.3833,30,30
+claude,claude-opus-4-8,rot,60,blob,30,0.5,blob-rot90,30,0.5,blob,0.5,True,0.4915,0.4915,0.5373,0.5,1.0,1.0,1.0,1.0,1.0,1.0,30,30
+claude,claude-opus-4-8,noise,60,noise-A,30,0.5,noise-B,30,0.5,noise-A,0.5,True,0.4915,0.4915,0.5373,0.5,1.0,1.0,1.0,1.0,1.0,1.0,30,30
+claude,claude-opus-4-8,mirror,60,blob,30,0.5,blob-mirror,30,0.5,blob,0.5,True,0.4915,0.4915,0.5373,0.5,1.0,1.0,1.0,1.0,1.0,1.0,30,30

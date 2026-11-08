@@ -1,0 +1,55 @@
+model,model_id,stimulus_pair,family,manipulation,source,identity_1,identity_2,n_valid,modal_identity,modal_share,match_unbiased,match_plugin,entropy_bits,p_left,n_modal_shown_left,n_modal_shown_right,p_modal_given_modal_left,p_modal_given_modal_right,form_consistency,rationale_mentions_position,n_AB,n_BA,ci_lo,ci_hi,n_parse_retry,n_api_error
+gpt,gpt-5.4,a_arrow_lr,A_semantic,arrow left vs right,targeted,left,right,30,right,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,1.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,a_arrow_ud,A_semantic,arrow up vs down,targeted,up,down,30,up,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,a_arrow_updiag,A_semantic,arrow up vs diagonal,targeted,up,diag,30,up,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,a_chev_ud,A_semantic,chevron pointing up vs down,targeted,up,down,30,up,0.5667,0.492,0.5089,0.9871,0.3333,15,15,0.4,0.7333,0.6667,0.0,15,15,0.4828,0.5954,0,0
+gpt,gpt-5.4,a_tee_rot90,A_semantic,T-glyph upright vs rotated 90,targeted,upright,sideways,30,upright,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,a_tee_upright,A_semantic,T-glyph upright vs inverted,targeted,upright,inverted,30,upright,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,a_tri_ud,A_semantic,triangle apex up vs down,targeted,up,down,30,up,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,b_circ_bar,B_glyph,circled bar upright vs tilted 45,targeted,upright,tilted,30,upright,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,b_cross_x,B_glyph,plus vs multiplication-sign orientation,targeted,plus,ex,30,plus,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,b_hook_mirror,B_glyph,hook glyph vs its mirror,targeted,hook_r,hook_l,30,hook_r,0.5,0.4828,0.5,1.0,0.8667,15,15,0.8667,0.1333,0.2667,0.8667,15,15,0.4828,0.5655,0,0
+gpt,gpt-5.4,b_s_z,B_glyph,smooth S vs angular Z,targeted,s_smooth,z_angular,30,s_smooth,0.7333,0.5954,0.6089,0.8366,0.3667,15,15,0.6,0.8667,0.7333,0.0,15,15,0.492,0.8138,0,0
+gpt,gpt-5.4,b_spiral_cw,B_glyph,clockwise vs counter-clockwise spiral,targeted,cw,ccw,30,ccw,0.7667,0.6299,0.6422,0.7838,0.5333,15,15,0.8,0.7333,0.9333,0.3667,15,15,0.5034,0.8138,0,0
+gpt,gpt-5.4,b_tee_ell,B_glyph,T-glyph vs L-glyph,targeted,tee,ell,30,tee,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,c_contr_extreme,C_contrast,very light vs very dark disc,targeted,vlight,vdark,30,vdark,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,c_contr_subtle,C_contrast,light vs mid-grey disc,targeted,light,midgrey,30,midgrey,0.9667,0.9333,0.9356,0.2108,0.5333,15,15,1.0,0.9333,0.9333,0.1,15,15,0.8138,1.0,0,0
+gpt,gpt-5.4,c_fill_outline,C_contrast,filled vs outline disc,targeted,filled,outline,30,filled,0.9667,0.9333,0.9356,0.2108,0.5333,15,15,1.0,0.9333,0.9333,0.0,15,15,0.8138,1.0,0,0
+gpt,gpt-5.4,c_stroke_wt,C_contrast,thick vs thin stroke,targeted,thick,thin,30,thick,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,c_weight_blob,C_contrast,"same blob, heavy vs light ink",targeted,heavy,light,30,heavy,0.8333,0.7126,0.7222,0.65,0.3333,15,15,0.6667,1.0,0.6667,0.0,15,15,0.5655,0.9333,0,0
+gpt,gpt-5.4,d_clustered,D_density,"equal count, clustered vs spread",targeted,clustered,spread,30,clustered,0.9,0.8138,0.82,0.469,0.4667,15,15,0.8667,0.9333,0.9333,0.0,15,15,0.6299,1.0,0,0
+gpt,gpt-5.4,d_dens_extreme,D_density,4 vs 60 dots,targeted,sparse,dense,30,sparse,0.9667,0.9333,0.9356,0.2108,0.4667,15,15,0.9333,1.0,0.9333,0.0,15,15,0.8138,1.0,0,0
+gpt,gpt-5.4,d_dens_subtle,D_density,12 vs 20 dots,targeted,sparse,dense,30,dense,0.7667,0.6299,0.6422,0.7838,0.3333,15,15,0.6,0.9333,0.6667,0.0,15,15,0.5034,0.8138,0,0
+gpt,gpt-5.4,d_eq_ink,D_density,"equal total ink, few large vs many small",targeted,few_large,many_small,30,few_large,0.7667,0.6299,0.6422,0.7838,0.3333,15,15,0.6,0.9333,0.6667,0.0,15,15,0.5034,0.8138,0,0
+gpt,gpt-5.4,d_texture,D_density,fine vs coarse stipple in a fixed disc,targeted,fine,coarse,30,coarse,0.9333,0.8713,0.8756,0.3534,0.5,15,15,0.9333,0.9333,1.0,0.0,15,15,0.7126,1.0,0,0
+gpt,gpt-5.4,e_closure_c,E_closure,closed ring vs C-shape,targeted,closed,c_shape,30,closed,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+gpt,gpt-5.4,e_convex_blob,E_closure,smooth convex blob vs smooth shallow-lobed concave,targeted,convex,concave,30,convex,0.9333,0.8713,0.8756,0.3534,0.4333,15,15,0.8667,1.0,0.8667,0.0,15,15,0.7126,1.0,0,0
+gpt,gpt-5.4,e_convex_mild,E_closure,convex heptagon vs mildly concave,targeted,convex,concave,30,convex,0.9333,0.8713,0.8756,0.3534,0.5,15,15,0.9333,0.9333,1.0,0.0,15,15,0.7126,1.0,0,0
+gpt,gpt-5.4,e_open_subtle,E_closure,closed ring vs 24 deg gap,targeted,closed,open,30,closed,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,a_arrow_lr,A_semantic,arrow left vs right,targeted,left,right,30,right,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.9333,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,a_arrow_ud,A_semantic,arrow up vs down,targeted,up,down,30,up,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.2667,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,a_arrow_updiag,A_semantic,arrow up vs diagonal,targeted,up,diag,30,up,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,a_chev_ud,A_semantic,chevron pointing up vs down,targeted,up,down,30,up,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.3333,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,a_tee_rot90,A_semantic,T-glyph upright vs rotated 90,targeted,upright,sideways,30,upright,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0667,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,a_tee_upright,A_semantic,T-glyph upright vs inverted,targeted,upright,inverted,30,upright,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.2667,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,a_tri_ud,A_semantic,triangle apex up vs down,targeted,up,down,30,up,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.2,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,b_circ_bar,B_glyph,circled bar upright vs tilted 45,targeted,upright,tilted,30,upright,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0333,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,b_cross_x,B_glyph,plus vs multiplication-sign orientation,targeted,plus,ex,30,plus,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.1667,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,b_hook_mirror,B_glyph,hook glyph vs its mirror,targeted,hook_r,hook_l,30,hook_l,0.6,0.5034,0.52,0.971,0.9,15,15,1.0,0.2,0.2,1.0,15,15,0.4828,0.6299,0,0
+claude,claude-opus-4-8,b_s_z,B_glyph,smooth S vs angular Z,targeted,s_smooth,z_angular,30,s_smooth,0.6333,0.5195,0.5356,0.9481,0.8667,15,15,1.0,0.2667,0.2667,0.6,15,15,0.4828,0.669,0,0
+claude,claude-opus-4-8,b_spiral_cw,B_glyph,clockwise vs counter-clockwise spiral,targeted,cw,ccw,30,ccw,0.9667,0.9333,0.9356,0.2108,0.5333,15,15,1.0,0.9333,0.9333,0.5333,15,15,0.8138,1.0,0,0
+claude,claude-opus-4-8,b_tee_ell,B_glyph,T-glyph vs L-glyph,targeted,tee,ell,30,tee,0.6667,0.5402,0.5556,0.9183,0.8333,15,15,1.0,0.3333,0.3333,0.4,15,15,0.4851,0.7126,0,0
+claude,claude-opus-4-8,c_contr_extreme,C_contrast,very light vs very dark disc,targeted,vlight,vdark,30,vdark,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.1,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,c_contr_subtle,C_contrast,light vs mid-grey disc,targeted,light,midgrey,30,midgrey,0.5,0.4828,0.5,1.0,1.0,15,15,1.0,0.0,0.0,0.0,15,15,0.4828,0.5655,0,0
+claude,claude-opus-4-8,c_fill_outline,C_contrast,filled vs outline disc,targeted,filled,outline,30,filled,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,c_stroke_wt,C_contrast,thick vs thin stroke,targeted,thick,thin,30,thick,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.0,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,c_weight_blob,C_contrast,"same blob, heavy vs light ink",targeted,heavy,light,30,heavy,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.1,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,d_clustered,D_density,"equal count, clustered vs spread",targeted,clustered,spread,30,clustered,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.5667,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,d_dens_extreme,D_density,4 vs 60 dots,targeted,sparse,dense,30,sparse,0.6667,0.5402,0.5556,0.9183,0.3,15,15,0.4667,0.8667,0.6,0.0667,15,15,0.4828,0.7126,0,0
+claude,claude-opus-4-8,d_dens_subtle,D_density,12 vs 20 dots,targeted,sparse,dense,30,dense,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.2,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,d_eq_ink,D_density,"equal total ink, few large vs many small",targeted,few_large,many_small,30,few_large,0.9667,0.9333,0.9356,0.2108,0.4667,15,15,0.9333,1.0,0.9333,0.0333,15,15,0.8138,1.0,0,0
+claude,claude-opus-4-8,d_texture,D_density,fine vs coarse stipple in a fixed disc,targeted,fine,coarse,30,coarse,0.5667,0.492,0.5089,0.9871,0.0667,15,15,0.1333,1.0,0.1333,0.1667,15,15,0.4828,0.5954,0,0
+claude,claude-opus-4-8,e_closure_c,E_closure,closed ring vs C-shape,targeted,closed,c_shape,30,closed,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.2667,15,15,1.0,1.0,0,0
+claude,claude-opus-4-8,e_convex_blob,E_closure,smooth convex blob vs smooth shallow-lobed concave,targeted,convex,concave,30,convex,0.8333,0.7126,0.7222,0.65,0.4667,15,15,0.8,0.8667,0.9333,0.3,15,15,0.5655,0.9333,0,0
+claude,claude-opus-4-8,e_convex_mild,E_closure,convex heptagon vs mildly concave,targeted,convex,concave,30,concave,0.5667,0.492,0.5089,0.9871,0.1333,15,15,0.2,0.9333,0.2667,0.0667,15,15,0.4828,0.5954,0,0
+claude,claude-opus-4-8,e_open_subtle,E_closure,closed ring vs 24 deg gap,targeted,closed,open,30,closed,1.0,1.0,1.0,-0.0,0.5,15,15,1.0,1.0,1.0,0.4,15,15,1.0,1.0,0,0

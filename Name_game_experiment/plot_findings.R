@@ -1,3 +1,10 @@
+# Path resolves from this script's own location, so the project can be moved.
+.script_dir <- function() {
+  a <- commandArgs(trailingOnly = FALSE)
+  f <- sub("^--file=", "", a[grep("^--file=", a)])
+  if (length(f)) normalizePath(dirname(f)) else normalizePath(getwd())
+}
+
 #!/usr/bin/env Rscript
 # Headline findings figure: across all 5 games, how many of each game's 4 LLM
 # players chose J / N / M per round (mean +/- SD across games). Highlights the
@@ -7,7 +14,7 @@
 
 suppressMessages(library(ggplot2))
 
-dir <- "/Users/calypsocalcott/LLM_Coordination/Name_game_experiment"
+dir <- .script_dir()
 files <- list.files(dir, pattern = "^name_game_bot_follow_human_.*\\.csv$", full.names = TRUE)
 if (length(files) == 0) stop("No results CSV found.")
 f <- files[order(file.info(files)$mtime, decreasing = TRUE)][1]

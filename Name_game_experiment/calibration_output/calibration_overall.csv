@@ -1,0 +1,7 @@
+subset,rater,n,MAE,RMSE,corr_with_empirical
+ALL,self,22,0.1426,0.1684,0.5152
+ALL,auditor,22,0.1495,0.181,0.3499
+focal=GPT-5.4,self,11,0.153,0.1761,0.6593
+focal=GPT-5.4,auditor,11,0.1234,0.1614,0.5457
+focal=Claude Opus 4.8,self,11,0.1322,0.1603,0.5618
+focal=Claude Opus 4.8,auditor,11,0.1756,0.1987,-0.0729

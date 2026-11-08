@@ -1,0 +1,31 @@
+pair,identity_1,identity_2,family,cue_1,cue_2
+s_symmetry,symmetric,asymmetric,single,symmetry,
+s_complexity,simple,complex,single,complexity,
+s_regularity,regular,irregular,single,regularity,
+s_curvature,smooth,spiky,single,curvature,
+s_convexity,convex,concave,single,convexity,
+s_elongation,compact,elongated,single,elongation,
+s_size,small,large,single,size,
+s_tilt,upright,tilted,single,orientation,
+s_closure,closed,open,single,closure,
+s_hole,solid,holed,single,hole,
+s_count,one,many,single,numerosity,
+s_density,sparse,dense,single,density,
+s_alignment,aligned,scattered,single,alignment,
+s_stripe_or,horizontal,vertical,single,line orientation,
+s_contrast,light,dark,single,contrast,
+s_arrow,up,right,single,semantic orientation,
+c_sym_size,sym_small,asym_large,compete,symmetry,size
+c_sym_count,sym_one,asym_many,compete,symmetry,numerosity
+c_reg_size,reg_small,irreg_large,compete,regularity,size
+c_spiky_size,spiky_small,smooth_large,compete,curvature,size
+c_smooth_sym,smooth_asym,spiky_sym,compete,curvature,symmetry
+c_hole_size,holed_small,solid_large,compete,hole,size
+c_count_size,many_small,one_large,compete,numerosity,size
+c_tilt_reg,upright_irreg,tilted_reg,compete,orientation,regularity
+c_contr_size,dark_small,light_large,compete,contrast,size
+c_elong_sym,elong_sym,compact_asym,compete,elongation,symmetry
+c_open_cplx,open_simple,closed_cplx,compete,closure,complexity
+c_dens_align,dense_scatter,sparse_grid,compete,density,alignment
+c_star_circle,star_eqarea,circle_eqarea,compete,curvature,area-matched
+c_nested_big,nested_small,single_large,compete,nestedness,size

@@ -14,35 +14,70 @@ A key manipulation is **partner condition**: agents are told their co-players ar
 
 ---
 
+## Experiments
+
+**[`Name_game_experiment/experiments/`](Name_game_experiment/experiments/) is the
+index of every experiment in this project** — 27 of them, 2026-05-07 to 2026-08-06,
+one dated folder each holding `code/`, `data/`, `visualizations/` and a README.
+Start there.
+
+They fall into four lines of work:
+
+| line | what varies | folders |
+|---|---|---|
+| **Partner identity** | who the agent is told it is playing with — self / human / other-LLM / generic-AI mix | `llm_feedback_MN`, `claude_3cond`, `belief_3cond`, `generic_ai_mix`, `bot_follow_human` |
+| **Stimulus hacking** | whether the focal point can be found in the stimulus itself, rather than agreed on | the `2026-07-19` set: strings, car makes, visual probes, mountains, landscapes, inkblots, roundabout |
+| **Prediction** | the LLM observes rather than plays, and forecasts others' switching — with real human participants as the comparison | `prediction_game_*`, `prediction_round9_*`, `human_predictions_study1/2` |
+| **Convention entrenchment** | how many rounds the old convention ran before an *unannounced* payoff shift, crossed with how much the new option pays | `entrenchment_pilot`, `entrenchment_singleM`, `entrenchment_payoff_sweep`, `entrenchment_replication_grid` |
+
+Self-coordination (does a model coordinate with copies of itself via a self-model
+or via shared salience?) split out on 2026-08-04 into its own project at
+[`../Self_Coordination/`](../Self_Coordination/). Human-participant oTree studies
+live in [`../Name_Game/`](../Name_Game/).
+
+---
+
 ## Repository Structure
 
 ```
 LLM_Coordination/
 │
-├── Name_game_experiment/          # Experiment scripts
-│   ├── Name_Game_LLM_feedback_MN.py             # Main experiment (LLM-only, all 4 conditions)
-│   ├── Name_Game_LLM_feedback_MN_HUMAN_ONLY.py  # Human partner condition variant
-│   ├── Name_Game_reasoning_openAI_participants_implicit.py  # Earlier reasoning variant
-│   └── Name_Game_two_letters_no_feedback_openAI_participants.py  # No-feedback variant
+├── Name_game_experiment/          # The LLM Name Game — working tree
+│   ├── experiments/               #   >> the dated experiment index (start here)
+│   ├── tools/
+│   │   └── build_experiment_folders.py   # manifest that builds experiments/
+│   ├── results/                   #   raw result CSVs, timestamped by the runner
+│   ├── stimuli/                   #   shared stimulus image sets
+│   ├── step1_output/              #   cross-model stimulus screen deliverables
+│   ├── Name_Game_*.py             #   runners
+│   ├── *_probe.py, step1*.py      #   stimulus probes and screening
+│   └── fig_*.R, analyze_*.R       #   figures and analysis
 │
-├── Name_game_analysis_scripts/    # Analysis scripts
-│   ├── analyze_name_game_results.py              # Python analysis script
-│   └── name_game_analysis/
-│       ├── analyze_name_game_by_condition.R      # R analysis by partner condition
-│       ├── name_game_LLM_feedback_MN_20260507_134935.csv
-│       └── name_game_LLM_feedback_MN_HUMAN_20260507_212952.csv
+├── Prediction_game/               # LLM as observer/forecaster, not player
+│   ├── experiment/  analysis/  results/
 │
-├── results/                       # Raw output data
-│   ├── name_game_LLM_feedback_MN_20260507_134935.csv     # LLM-only runs
-│   ├── name_game_LLM_feedback_MN_HUMAN_20260507_212952.csv  # Human condition runs
-│   ├── name_game_reasoning_qwen_results_part_1.csv       # Qwen model results
-│   ├── name_game_reasoning_qwen_results_part_2.csv
-│   └── name_game_reasoning_qwen_results_part_3.csv
+├── qualtrics_human_study/         # Human participants doing the prediction task
+│   ├── data/{study1,study2}_predictions/
+│   ├── stimuli/                   #   incl. reward_15/20/50, ai_framing, midplacement
+│   └── generate_stimuli*.py
 │
-├── analyze_name_game_results.R    # Full R analysis script (run from repo root)
-├── name_game_analysis.png         # Summary visualization
-└── .gitignore
+├── Name_game_analysis_scripts/    # Earlier analysis scripts (May run)
+├── data/                          # Third-party reference datasets (git-ignored)
+├── results/                       # Earliest raw output (May run, Qwen runs)
+└── analyze_name_game_results.R    # Full R analysis (run from repo root)
 ```
+
+Each `experiments/<date>_<slug>/` folder is a **copy** — the working tree above is
+the source of truth. Rebuild the copies with:
+
+```bash
+cd Name_game_experiment && python3 tools/build_experiment_folders.py          # add new only
+cd Name_game_experiment && python3 tools/build_experiment_folders.py --force  # rebuild all
+```
+
+To add an experiment, append an entry to the `E` list in
+`tools/build_experiment_folders.py` and re-run it. The index table is generated
+from that list, so it cannot drift.
 
 ---
 

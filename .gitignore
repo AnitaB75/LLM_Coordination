@@ -4,3 +4,19 @@ __pycache__/
 *.pyc
 .Rhistory
 .RData
+
+# Large external datasets (~1.6 GB) for the Shapira et al. 2026
+# "Alignment Makes Language Models Normative, Not Descriptive" re-analysis.
+# Re-fetch via data/README.md rather than committing.
+data/
+
+# Python virtual environments
+.venv/
+venv/
+.ipynb_checkpoints/
+node_modules/
+*.key
+.wrangler/
+# Large files kept local only (>50 MB)
+/data/habermas_machine/hm_all_candidate_comparisons.parquet
+/LLM_coordination_study1.csv

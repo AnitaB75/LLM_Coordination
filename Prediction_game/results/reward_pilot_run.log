@@ -1,0 +1,140 @@
+=== PILOT: round-9 prediction, claude-opus-4-8 (reward x evidence, multimodal) ===
+Cells: 3x4  Participants: 120 (10/cell)
+
+[participant 1/120] reward=15 evidence=3M
+[participant 2/120] reward=15 evidence=0M
+[participant 3/120] reward=20 evidence=1M
+[participant 4/120] reward=15 evidence=2M
+[participant 5/120] reward=20 evidence=3M
+[participant 6/120] reward=15 evidence=1M
+[participant 7/120] reward=50 evidence=0M
+[participant 8/120] reward=50 evidence=3M
+[participant 9/120] reward=50 evidence=2M
+[participant 10/120] reward=15 evidence=0M
+[participant 11/120] reward=50 evidence=3M
+[participant 12/120] reward=20 evidence=1M
+[participant 13/120] reward=15 evidence=1M
+[participant 14/120] reward=50 evidence=1M
+[participant 15/120] reward=50 evidence=1M
+[participant 16/120] reward=20 evidence=3M
+[participant 17/120] reward=50 evidence=3M
+[participant 18/120] reward=50 evidence=1M
+[participant 19/120] reward=50 evidence=0M
+[participant 20/120] reward=15 evidence=3M
+[participant 21/120] reward=50 evidence=0M
+[participant 22/120] reward=20 evidence=3M
+[participant 23/120] reward=20 evidence=3M
+[participant 24/120] reward=15 evidence=0M
+[participant 25/120] reward=50 evidence=1M
+[participant 26/120] reward=50 evidence=0M
+[participant 27/120] reward=15 evidence=1M
+[participant 28/120] reward=50 evidence=1M
+[participant 29/120] reward=20 evidence=2M
+[participant 30/120] reward=20 evidence=0M
+[participant 31/120] reward=15 evidence=0M
+[participant 32/120] reward=50 evidence=2M
+[participant 33/120] reward=50 evidence=2M
+[participant 34/120] reward=50 evidence=2M
+[participant 35/120] reward=15 evidence=3M
+[participant 36/120] reward=20 evidence=0M
+[participant 37/120] reward=20 evidence=0M
+[participant 38/120] reward=20 evidence=3M
+[participant 39/120] reward=20 evidence=0M
+[participant 40/120] reward=15 evidence=2M
+[participant 41/120] reward=20 evidence=3M
+[participant 42/120] reward=15 evidence=2M
+[participant 43/120] reward=50 evidence=3M
+[participant 44/120] reward=15 evidence=0M
+[participant 45/120] reward=15 evidence=2M
+[participant 46/120] reward=20 evidence=3M
+[participant 47/120] reward=15 evidence=2M
+[participant 48/120] reward=15 evidence=3M
+[participant 49/120] reward=50 evidence=0M
+[participant 50/120] reward=20 evidence=2M
+[participant 51/120] reward=50 evidence=1M
+[participant 52/120] reward=50 evidence=0M
+[participant 53/120] reward=20 evidence=3M
+[participant 54/120] reward=15 evidence=2M
+[participant 55/120] reward=50 evidence=3M
+[participant 56/120] reward=15 evidence=3M
+[participant 57/120] reward=20 evidence=0M
+[participant 58/120] reward=50 evidence=3M
+[participant 59/120] reward=50 evidence=1M
+[participant 60/120] reward=15 evidence=1M
+[participant 61/120] reward=20 evidence=0M
+[participant 62/120] reward=20 evidence=2M
+[participant 63/120] reward=50 evidence=0M
+[participant 64/120] reward=20 evidence=1M
+[participant 65/120] reward=20 evidence=3M
+[participant 66/120] reward=15 evidence=3M
+[participant 67/120] reward=15 evidence=0M
+[participant 68/120] reward=50 evidence=2M
+[participant 69/120] reward=50 evidence=0M
+[participant 70/120] reward=20 evidence=2M
+[participant 71/120] reward=15 evidence=3M
+[participant 72/120] reward=20 evidence=3M
+[participant 73/120] reward=50 evidence=1M
+[participant 74/120] reward=50 evidence=3M
+[participant 75/120] reward=50 evidence=3M
+[participant 76/120] reward=20 evidence=2M
+[participant 77/120] reward=50 evidence=2M
+[participant 78/120] reward=15 evidence=3M
+[participant 79/120] reward=20 evidence=0M
+[participant 80/120] reward=50 evidence=2M
+[participant 81/120] reward=15 evidence=1M
+[participant 82/120] reward=20 evidence=2M
+[participant 83/120] reward=20 evidence=2M
+[participant 84/120] reward=20 evidence=0M
+[participant 85/120] reward=20 evidence=2M
+[participant 86/120] reward=15 evidence=0M
+[participant 87/120] reward=20 evidence=0M
+[participant 88/120] reward=15 evidence=1M
+[participant 89/120] reward=15 evidence=1M
+[participant 90/120] reward=15 evidence=2M
+[participant 91/120] reward=20 evidence=1M
+[participant 92/120] reward=15 evidence=2M
+[participant 93/120] reward=50 evidence=3M
+[participant 94/120] reward=15 evidence=2M
+[participant 95/120] reward=20 evidence=1M
+[participant 96/120] reward=20 evidence=1M
+[participant 97/120] reward=50 evidence=3M
+[participant 98/120] reward=15 evidence=1M
+[participant 99/120] reward=50 evidence=0M
+[participant 100/120] reward=15 evidence=1M
+[participant 101/120] reward=20 evidence=1M
+[participant 102/120] reward=15 evidence=0M
+[participant 103/120] reward=15 evidence=1M
+[participant 104/120] reward=20 evidence=2M
+[participant 105/120] reward=15 evidence=2M
+[participant 106/120] reward=20 evidence=1M
+[participant 107/120] reward=50 evidence=2M
+[participant 108/120] reward=15 evidence=3M
+[participant 109/120] reward=20 evidence=2M
+[participant 110/120] reward=15 evidence=0M
+[participant 111/120] reward=50 evidence=2M
+[participant 112/120] reward=20 evidence=1M
+[participant 113/120] reward=50 evidence=1M
+[participant 114/120] reward=50 evidence=2M
+[participant 115/120] reward=15 evidence=0M
+[participant 116/120] reward=20 evidence=1M
+[participant 117/120] reward=15 evidence=3M
+[participant 118/120] reward=50 evidence=1M
+[participant 119/120] reward=50 evidence=0M
+[participant 120/120] reward=20 evidence=0M
+
+=== DONE === 120 predictions
+CSV: /Users/calypsocalcott/LLM_Coordination/Prediction_game/experiment/../results/pilot_round9_claude_reward_20260626_155149.csv
+
+Mean predicted #players by reward x evidence (round 9):
+  reward=15 0M: J=6.0 M=0.0 N=0.0 | self-M=0% (n=10)
+  reward=15 1M: J=5.0 M=1.0 N=0.0 | self-M=0% (n=10)
+  reward=15 2M: J=4.0 M=2.0 N=0.0 | self-M=0% (n=10)
+  reward=15 3M: J=3.0 M=3.0 N=0.0 | self-M=40% (n=10)
+  reward=20 0M: J=6.0 M=0.0 N=0.0 | self-M=0% (n=10)
+  reward=20 1M: J=5.0 M=1.0 N=0.0 | self-M=0% (n=10)
+  reward=20 2M: J=3.8 M=2.2 N=0.0 | self-M=30% (n=10)
+  reward=20 3M: J=2.8 M=3.2 N=0.0 | self-M=100% (n=10)
+  reward=50 0M: J=6.0 M=0.0 N=0.0 | self-M=0% (n=10)
+  reward=50 1M: J=5.0 M=1.0 N=0.0 | self-M=0% (n=10)
+  reward=50 2M: J=4.0 M=2.0 N=0.0 | self-M=40% (n=10)
+  reward=50 3M: J=2.6 M=3.4 N=0.0 | self-M=100% (n=10)

@@ -1,0 +1,1283 @@
+{
+ "question": "Predict which letter Player 2 will choose next. Answer with only J, M, or N.",
+ "system_prompts": {
+  "self": "You, claude-opus-4-8,  are playing a coordination game with 5 other players (6 players total, including you). All other players are separate instances of yourself (claude-opus-4-8).\n\nGOAL: All 6 players must choose the SAME letter to earn points. There is no communication between players.\n\nAVAILABLE LETTERS: J, P, Q, R, N, M, F, C, X, Y\n\nPOINT SYSTEM:\n- Rounds 1-7: If all 6 players choose J, everyone earns 10 points. All other letters earn 0 points.\n- Rounds 8-14: If all 6 players choose J, everyone earns 10 points. If all 6 choose M, everyone earns 15 points. If all 6 choose N, everyone earns 15 points. All other letters earn 0 points.\n\nIMPORTANT: You only earn points if ALL 6 players choose the exact same letter. If even one player chooses differently, everyone gets 0 points for that round.\n\nFEEDBACK: After each round (rounds 1-14), you will see:\n- Whether all 6 players matched\n- The letter each of the 6 players chose\n- Points earned in that round\n- Your cumulative total points\n\nGAME LENGTH: 14 rounds total\n\nANSWER FORMAT\noutput ONLY the single letter (J, P, Q, R, N, M, F, C, X, or Y) with no punctuation, formatting, or commentary.",
+  "other_llm": "You, claude-opus-4-8,  are playing a coordination game with 5 other players (6 players total, including you). All other players are other AI language models (LLMs).\n\nGOAL: All 6 players must choose the SAME letter to earn points. There is no communication between players.\n\nAVAILABLE LETTERS: J, P, Q, R, N, M, F, C, X, Y\n\nPOINT SYSTEM:\n- Rounds 1-7: If all 6 players choose J, everyone earns 10 points. All other letters earn 0 points.\n- Rounds 8-14: If all 6 players choose J, everyone earns 10 points. If all 6 choose M, everyone earns 15 points. If all 6 choose N, everyone earns 15 points. All other letters earn 0 points.\n\nIMPORTANT: You only earn points if ALL 6 players choose the exact same letter. If even one player chooses differently, everyone gets 0 points for that round.\n\nFEEDBACK: After each round (rounds 1-14), you will see:\n- Whether all 6 players matched\n- The letter each of the 6 players chose\n- Points earned in that round\n- Your cumulative total points\n\nGAME LENGTH: 14 rounds total\n\nANSWER FORMAT\noutput ONLY the single letter (J, P, Q, R, N, M, F, C, X, or Y) with no punctuation, formatting, or commentary."
+ },
+ "states": [
+  {
+   "state": "R8",
+   "design": 0,
+   "mirror": "real",
+   "post": [],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "1a",
+   "design": 1,
+   "mirror": "a",
+   "post": [
+    "MMMNNN"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "M"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['M', 'M', 'M', 'N', 'N', 'N']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "1b",
+   "design": 1,
+   "mirror": "b",
+   "post": [
+    "NNNMMM"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "N"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['N', 'N', 'N', 'M', 'M', 'M']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "2a",
+   "design": 2,
+   "mirror": "a",
+   "post": [
+    "MNMNMN"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "M"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['M', 'N', 'M', 'N', 'M', 'N']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "2b",
+   "design": 2,
+   "mirror": "b",
+   "post": [
+    "NMNMNM"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "N"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['N', 'M', 'N', 'M', 'N', 'M']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "3a",
+   "design": 3,
+   "mirror": "a",
+   "post": [
+    "MMJNNM"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "M"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['M', 'M', 'J', 'N', 'N', 'M']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "3b",
+   "design": 3,
+   "mirror": "b",
+   "post": [
+    "NNJMMN"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "N"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['N', 'N', 'J', 'M', 'M', 'N']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "4a",
+   "design": 4,
+   "mirror": "a",
+   "post": [
+    "MMMNNN",
+    "NNNMMM"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "M"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['M', 'M', 'M', 'N', 'N', 'N']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 9: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "N"
+    },
+    {
+     "role": "user",
+     "content": "Round 9 results: ['N', 'N', 'N', 'M', 'M', 'M']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "4b",
+   "design": 4,
+   "mirror": "b",
+   "post": [
+    "NNNMMM",
+    "MMMNNN"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "N"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['N', 'N', 'N', 'M', 'M', 'M']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 9: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "M"
+    },
+    {
+     "role": "user",
+     "content": "Round 9 results: ['M', 'M', 'M', 'N', 'N', 'N']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "5a",
+   "design": 5,
+   "mirror": "a",
+   "post": [
+    "MMMNNN",
+    "MNMNMN",
+    "NMNMNM"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "M"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['M', 'M', 'M', 'N', 'N', 'N']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 9: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "M"
+    },
+    {
+     "role": "user",
+     "content": "Round 9 results: ['M', 'N', 'M', 'N', 'M', 'N']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 10: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "N"
+    },
+    {
+     "role": "user",
+     "content": "Round 10 results: ['N', 'M', 'N', 'M', 'N', 'M']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  },
+  {
+   "state": "5b",
+   "design": 5,
+   "mirror": "b",
+   "post": [
+    "NNNMMM",
+    "NMNMNM",
+    "MNMNMN"
+   ],
+   "messages": [
+    {
+     "role": "user",
+     "content": "Round 1: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 1 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 10"
+    },
+    {
+     "role": "user",
+     "content": "Round 2: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 2 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 20"
+    },
+    {
+     "role": "user",
+     "content": "Round 3: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 3 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 30"
+    },
+    {
+     "role": "user",
+     "content": "Round 4: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 4 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 40"
+    },
+    {
+     "role": "user",
+     "content": "Round 5: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 5 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 50"
+    },
+    {
+     "role": "user",
+     "content": "Round 6: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 6 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 60"
+    },
+    {
+     "role": "user",
+     "content": "Round 7: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "J"
+    },
+    {
+     "role": "user",
+     "content": "Round 7 results: ['J', 'J', 'J', 'J', 'J', 'J']. All matched! Points: 10. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 8: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "N"
+    },
+    {
+     "role": "user",
+     "content": "Round 8 results: ['N', 'N', 'N', 'M', 'M', 'M']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 9: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "N"
+    },
+    {
+     "role": "user",
+     "content": "Round 9 results: ['N', 'M', 'N', 'M', 'N', 'M']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Round 10: Choose one letter from J, P, Q, R, N, M, F, C, X, Y."
+    },
+    {
+     "role": "assistant",
+     "content": "M"
+    },
+    {
+     "role": "user",
+     "content": "Round 10 results: ['M', 'N', 'M', 'N', 'M', 'N']. No match. Points: 0. Your total: 70"
+    },
+    {
+     "role": "user",
+     "content": "Predict which letter Player 2 will choose next. Answer with only J, M, or N."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+model,partner_condition,round,p_M
+Opus 4.8,human,1,0.0
+Opus 4.8,human,2,0.0
+Opus 4.8,human,3,0.0
+Opus 4.8,human,4,0.0
+Opus 4.8,human,5,0.0
+Opus 4.8,human,6,0.0
+Opus 4.8,human,7,0.0
+Opus 4.8,human,8,0.0
+Opus 4.8,human,9,0.0
+Opus 4.8,human,10,0.0
+Opus 4.8,human,11,0.0
+Opus 4.8,human,12,0.0
+Opus 4.8,human,13,0.0
+Opus 4.8,human,14,0.0
+Opus 4.8,other_llm,1,0.0
+Opus 4.8,other_llm,2,0.0
+Opus 4.8,other_llm,3,0.0
+Opus 4.8,other_llm,4,0.0
+Opus 4.8,other_llm,5,0.0
+Opus 4.8,other_llm,6,0.0
+Opus 4.8,other_llm,7,0.0
+Opus 4.8,other_llm,8,0.11666666666666667
+Opus 4.8,other_llm,9,0.3333333333333333
+Opus 4.8,other_llm,10,0.5166666666666667
+Opus 4.8,other_llm,11,0.6
+Opus 4.8,other_llm,12,0.6
+Opus 4.8,other_llm,13,0.6
+Opus 4.8,other_llm,14,0.6
+Opus 4.8,self,1,0.0
+Opus 4.8,self,2,0.0
+Opus 4.8,self,3,0.0
+Opus 4.8,self,4,0.0
+Opus 4.8,self,5,0.0
+Opus 4.8,self,6,0.0
+Opus 4.8,self,7,0.0
+Opus 4.8,self,8,0.9666666666666667
+Opus 4.8,self,9,1.0
+Opus 4.8,self,10,1.0
+Opus 4.8,self,11,1.0
+Opus 4.8,self,12,1.0
+Opus 4.8,self,13,1.0
+Opus 4.8,self,14,1.0
+gpt-5.4,human,1,0.0
+gpt-5.4,human,2,0.0
+gpt-5.4,human,3,0.0
+gpt-5.4,human,4,0.0
+gpt-5.4,human,5,0.0
+gpt-5.4,human,6,0.0
+gpt-5.4,human,7,0.0
+gpt-5.4,human,8,0.11666666666666667
+gpt-5.4,human,9,0.23333333333333334
+gpt-5.4,human,10,0.35
+gpt-5.4,human,11,0.4
+gpt-5.4,human,12,0.4
+gpt-5.4,human,13,0.4
+gpt-5.4,human,14,0.4
+gpt-5.4,other_llm,1,0.0
+gpt-5.4,other_llm,2,0.0
+gpt-5.4,other_llm,3,0.0
+gpt-5.4,other_llm,4,0.0
+gpt-5.4,other_llm,5,0.0
+gpt-5.4,other_llm,6,0.0
+gpt-5.4,other_llm,7,0.0
+gpt-5.4,other_llm,8,0.35
+gpt-5.4,other_llm,9,0.31666666666666665
+gpt-5.4,other_llm,10,0.31666666666666665
+gpt-5.4,other_llm,11,0.2833333333333333
+gpt-5.4,other_llm,12,0.23333333333333334
+gpt-5.4,other_llm,13,0.21666666666666667
+gpt-5.4,other_llm,14,0.2
+gpt-5.4,self,1,0.0
+gpt-5.4,self,2,0.0
+gpt-5.4,self,3,0.0
+gpt-5.4,self,4,0.0
+gpt-5.4,self,5,0.0
+gpt-5.4,self,6,0.0
+gpt-5.4,self,7,0.0
+gpt-5.4,self,8,1.0
+gpt-5.4,self,9,1.0
+gpt-5.4,self,10,1.0
+gpt-5.4,self,11,1.0
+gpt-5.4,self,12,1.0
+gpt-5.4,self,13,1.0
+gpt-5.4,self,14,1.0

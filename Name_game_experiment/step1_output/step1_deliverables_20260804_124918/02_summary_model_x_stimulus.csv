@@ -1,0 +1,11 @@
+model,model_id,stimulus_pair,n_planned_trials,n_api_attempts,n_valid,n_invalid_attempts,n_retried_trials,n_api_errors,identity_1,n_identity_1,p_identity_1,identity_2,n_identity_2,p_identity_2,modal_identity,modal_share,modal_tied,match_unbiased,match_unbiased_ci_lo,match_unbiased_ci_hi,match_plugin,entropy_bits,entropy_normalized,p_left,match_position_unbiased,match_position_ci_lo,match_position_ci_hi,n_AB_variant,n_BA_variant,bootstrap_B,bootstrap_seed
+gpt,gpt-5.4,proto,60,60,60,0,0,0,circle,60,1.0,square,0,0.0,circle,1.0,False,1.0,1.0,1.0,1.0,-0.0,-0.0,0.5,0.491525,0.491525,0.537288,30,30,5000,20260804
+gpt,gpt-5.4,inkblot,60,60,60,0,0,0,ib-A,59,0.9833,ib-B,1,0.0167,ib-A,0.9833,False,0.966667,0.90339,1.0,0.967222,0.122292,0.122292,0.5167,0.49209,0.491525,0.537288,30,30,5000,20260804
+gpt,gpt-5.4,rot,60,60,60,0,0,0,blob,11,0.1833,blob-rot90,49,0.8167,blob-rot90,0.8167,False,0.69548,0.587006,0.816949,0.700556,0.687315,0.687315,0.45,0.49661,0.491525,0.548023,30,30,5000,20260804
+gpt,gpt-5.4,noise,60,60,60,0,0,0,noise-A,25,0.4167,noise-B,35,0.5833,noise-B,0.5833,False,0.50565,0.491525,0.572881,0.513889,0.979869,0.979869,0.3833,0.519209,0.49209,0.60226,30,30,5000,20260804
+gpt,gpt-5.4,mirror,60,60,60,0,0,0,blob,18,0.3,blob-mirror,42,0.7,blob-mirror,0.7,False,0.572881,0.50565,0.69548,0.58,0.881291,0.881291,0.7667,0.636158,0.537288,0.764972,30,30,5000,20260804
+claude,claude-opus-4-8,proto,60,60,60,0,0,0,circle,60,1.0,square,0,0.0,circle,1.0,False,1.0,1.0,1.0,1.0,-0.0,-0.0,0.5,0.491525,0.491525,0.537288,30,30,5000,20260804
+claude,claude-opus-4-8,inkblot,60,60,60,0,0,0,ib-A,30,0.5,ib-B,30,0.5,ib-A,0.5,True,0.491525,0.491525,0.537288,0.5,1.0,1.0,0.0,1.0,1.0,1.0,30,30,5000,20260804
+claude,claude-opus-4-8,rot,60,60,60,0,0,0,blob,9,0.15,blob-rot90,51,0.85,blob-rot90,0.85,False,0.740678,0.618644,0.873446,0.745,0.60984,0.60984,0.45,0.49661,0.491525,0.548023,30,30,5000,20260804
+claude,claude-opus-4-8,noise,60,60,60,0,0,0,noise-A,32,0.5333,noise-B,28,0.4667,noise-A,0.5333,False,0.493785,0.491525,0.548023,0.502222,0.996792,0.996792,0.9667,0.934463,0.844633,1.0,30,30,5000,20260804
+claude,claude-opus-4-8,mirror,60,60,60,0,0,0,blob,27,0.45,blob-mirror,33,0.55,blob-mirror,0.55,False,0.49661,0.491525,0.548023,0.505,0.992774,0.992774,0.85,0.740678,0.636158,0.873446,30,30,5000,20260804

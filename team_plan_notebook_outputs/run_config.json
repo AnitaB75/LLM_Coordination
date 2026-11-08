@@ -1,0 +1,34 @@
+{
+  "data": "/Users/calypsocalcott/Downloads/name_game_combined_human_llm_mixed.csv",
+  "out": "/Users/calypsocalcott/Desktop/Coordination/LLM_Coordination/team_plan_notebook_outputs",
+  "profile": "quick",
+  "seed": 20260819,
+  "bounds": {
+    "h_lo": 1e-07,
+    "h_hi": 0.999999,
+    "p_hi_max": 0.9999
+  },
+  "run_config": {
+    "fit_starts": 8,
+    "fit_maxiter": 1200,
+    "ppc_reps": 300,
+    "cv_folds": 5,
+    "cv_repeats": 1,
+    "cv_starts": 3,
+    "cv_maxiter": 900,
+    "param_recovery_reps": 10,
+    "model_recovery_reps": 5,
+    "recovery_starts": 3,
+    "recovery_maxiter": 800,
+    "signal_sim_reps": 300,
+    "run_boundary_sensitivity": true
+  },
+  "models": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "n_groups": 44,
+  "n_post_choices": 1848
+}

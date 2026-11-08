@@ -1,0 +1,31 @@
+stimulus_pair,family,cue_1,cue_2,gpt_match,gpt_ci,gpt_modal,gpt_p_left,gpt_form_consistency,claude_match,claude_ci,claude_modal,claude_p_left,claude_form_consistency,delta_gpt_minus_claude,delta_ci_lo,delta_ci_hi,delta_ci_excludes_zero,direction,crit_position_ok,crit_dissociation_ok,crit_form_ok,selected
+s_complexity,single,complexity,,1.0,"[1.0, 1.0]",simple,0.5,1.0,0.4851,"[0.4828, 0.5655]",complex,0.1,0.2,0.5149,0.4345,0.5172,True,GPT>Claude,True,True,True,True
+s_arrow,single,semantic orientation,,0.5034,"[0.4828, 0.6299]",up,0.2333,0.4667,1.0,"[1.0, 1.0]",up,0.5,1.0,-0.4966,-0.5172,-0.3701,True,Claude>GPT,True,True,True,True
+s_contrast,single,contrast,,1.0,"[1.0, 1.0]",dark,0.5,1.0,0.6299,"[0.5034, 0.8138]",dark,0.6,0.8,0.3701,0.1862,0.4966,True,GPT>Claude,True,True,True,True
+c_elong_sym,compete,elongation,symmetry,0.8138,"[0.6299, 1.0]",elong_sym,0.4667,0.9333,0.4851,"[0.4828, 0.5655]",compact_asym,0.0333,0.0667,0.3287,0.1287,0.4966,True,GPT>Claude,True,True,True,True
+c_open_cplx,compete,closure,complexity,0.5954,"[0.492, 0.7609]",closed_cplx,0.3,0.6,0.8713,"[0.7126, 1.0]",closed_cplx,0.4333,0.8667,-0.2759,-0.4598,-0.0437,True,Claude>GPT,True,True,True,True
+c_star_circle,compete,curvature,area-matched,0.7609,"[0.5954, 0.9333]",circle_eqarea,0.5,1.0,0.492,"[0.4828, 0.5954]",star_eqarea,0.0667,0.1333,0.2689,0.0736,0.4483,True,GPT>Claude,True,True,True,True
+s_convexity,single,convexity,,0.669,"[0.5402, 0.8713]",concave,0.3,0.6,0.9333,"[0.8138, 1.0]",concave,0.4667,0.9333,-0.2643,-0.4345,0.0,False,Claude>GPT,True,True,True,True
+s_density,single,density,,1.0,"[1.0, 1.0]",sparse,0.5,1.0,0.8138,"[0.669, 1.0]",sparse,0.5333,0.9333,0.1862,0.0,0.331,False,GPT>Claude,True,True,True,True
+s_stripe_or,single,line orientation,,0.6299,"[0.5034, 0.8138]",horizontal,0.5333,0.9333,0.4828,"[0.4828, 0.5655]",vertical,1.0,0.0,0.1471,0.0,0.3287,False,GPT>Claude,True,False,True,False
+c_reg_size,compete,regularity,size,1.0,"[1.0, 1.0]",reg_small,0.5,1.0,0.8713,"[0.7126, 1.0]",irreg_large,0.4333,0.8667,0.1287,0.0,0.2874,False,GPT>Claude,True,False,True,False
+s_hole,single,hole,,0.8713,"[0.7126, 1.0]",solid,0.5667,0.8667,1.0,"[1.0, 1.0]",solid,0.5,1.0,-0.1287,-0.2874,0.0,False,Claude>GPT,True,False,True,False
+c_tilt_reg,compete,orientation,regularity,0.4851,"[0.4828, 0.5655]",upright_irreg,0.0333,0.0667,0.5954,"[0.492, 0.8138]",tilted_reg,0.7667,0.4667,-0.1103,-0.2782,0.0207,False,Claude>GPT,False,False,False,False
+c_contr_size,compete,contrast,size,1.0,"[1.0, 1.0]",light_large,0.5,1.0,1.0,"[1.0, 1.0]",light_large,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+c_count_size,compete,numerosity,size,1.0,"[1.0, 1.0]",one_large,0.5,1.0,1.0,"[1.0, 1.0]",one_large,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+c_dens_align,compete,density,alignment,1.0,"[1.0, 1.0]",sparse_grid,0.5,1.0,1.0,"[1.0, 1.0]",sparse_grid,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+c_hole_size,compete,hole,size,1.0,"[1.0, 1.0]",solid_large,0.5,1.0,1.0,"[1.0, 1.0]",solid_large,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+c_nested_big,compete,nestedness,size,1.0,"[1.0, 1.0]",single_large,0.5,1.0,1.0,"[1.0, 1.0]",single_large,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+c_smooth_sym,compete,curvature,symmetry,1.0,"[1.0, 1.0]",spiky_sym,0.5,1.0,1.0,"[1.0, 1.0]",spiky_sym,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+c_spiky_size,compete,curvature,size,1.0,"[1.0, 1.0]",smooth_large,0.5,1.0,1.0,"[1.0, 1.0]",smooth_large,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+c_sym_count,compete,symmetry,numerosity,1.0,"[1.0, 1.0]",sym_one,0.5,1.0,1.0,"[1.0, 1.0]",sym_one,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+c_sym_size,compete,symmetry,size,1.0,"[1.0, 1.0]",sym_small,0.5,1.0,1.0,"[1.0, 1.0]",asym_large,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_alignment,single,alignment,,1.0,"[1.0, 1.0]",aligned,0.5,1.0,1.0,"[1.0, 1.0]",aligned,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_closure,single,closure,,1.0,"[1.0, 1.0]",closed,0.5,1.0,1.0,"[1.0, 1.0]",closed,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_count,single,numerosity,,1.0,"[1.0, 1.0]",one,0.5,1.0,1.0,"[1.0, 1.0]",one,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_curvature,single,curvature,,1.0,"[1.0, 1.0]",spiky,0.5,1.0,1.0,"[1.0, 1.0]",spiky,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_elongation,single,elongation,,1.0,"[1.0, 1.0]",compact,0.5,1.0,1.0,"[1.0, 1.0]",compact,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_regularity,single,regularity,,1.0,"[1.0, 1.0]",regular,0.5,1.0,1.0,"[1.0, 1.0]",regular,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_size,single,size,,1.0,"[1.0, 1.0]",large,0.5,1.0,1.0,"[1.0, 1.0]",large,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_symmetry,single,symmetry,,1.0,"[1.0, 1.0]",symmetric,0.5,1.0,1.0,"[1.0, 1.0]",symmetric,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False
+s_tilt,single,orientation,,1.0,"[1.0, 1.0]",upright,0.5,1.0,1.0,"[1.0, 1.0]",upright,0.5,1.0,0.0,0.0,0.0,False,Claude>GPT,True,False,True,False

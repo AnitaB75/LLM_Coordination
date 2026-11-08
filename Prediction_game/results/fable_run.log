@@ -1,0 +1,137 @@
+=== Name Game PREDICTION experiment — Claude Fable 5 rerun ===
+Model: claude-fable-5 | conditions: 6 | runs/condition: 20
+Total model calls: 120
+
+[1/120] condition=r8_1M run=20
+[2/120] condition=r8_2M run=2
+[3/120] condition=r8_2M run=11
+[4/120] condition=r8_4M run=16
+[5/120] condition=r8_4M run=15
+[6/120] condition=r8_3M run=4
+[7/120] condition=r8_2M run=14
+[8/120] condition=r8_splitMN run=13
+[9/120] condition=r8_splitMN run=1
+[10/120] condition=r8_4M run=9
+[11/120] condition=r8_2M run=19
+[12/120] condition=r8_3M run=2
+[13/120] condition=r8_2M run=12
+[14/120] condition=r8_1M run=6
+[15/120] condition=r8_splitMN run=11
+[16/120] condition=r8_0M run=16
+[17/120] condition=r8_1M run=7
+[18/120] condition=r8_4M run=6
+[19/120] condition=r8_splitMN run=18
+[20/120] condition=r8_2M run=16
+[21/120] condition=r8_0M run=13
+[22/120] condition=r8_splitMN run=14
+[23/120] condition=r8_splitMN run=4
+[24/120] condition=r8_2M run=8
+[25/120] condition=r8_4M run=10
+[26/120] condition=r8_2M run=7
+[27/120] condition=r8_splitMN run=17
+[28/120] condition=r8_2M run=18
+[29/120] condition=r8_3M run=3
+[30/120] condition=r8_2M run=20
+[31/120] condition=r8_0M run=15
+[32/120] condition=r8_4M run=20
+[33/120] condition=r8_1M run=5
+[34/120] condition=r8_splitMN run=12
+[35/120] condition=r8_3M run=13
+[36/120] condition=r8_splitMN run=3
+[37/120] condition=r8_3M run=14
+[38/120] condition=r8_4M run=17
+[39/120] condition=r8_3M run=1
+[40/120] condition=r8_splitMN run=16
+[41/120] condition=r8_0M run=8
+[42/120] condition=r8_1M run=17
+[43/120] condition=r8_2M run=5
+[44/120] condition=r8_4M run=1
+[45/120] condition=r8_2M run=10
+[46/120] condition=r8_1M run=2
+[47/120] condition=r8_1M run=18
+[48/120] condition=r8_2M run=17
+[49/120] condition=r8_1M run=12
+[50/120] condition=r8_1M run=4
+[51/120] condition=r8_0M run=4
+[52/120] condition=r8_3M run=17
+[53/120] condition=r8_2M run=1
+[54/120] condition=r8_4M run=13
+[55/120] condition=r8_2M run=15
+[56/120] condition=r8_splitMN run=5
+[57/120] condition=r8_4M run=11
+[58/120] condition=r8_splitMN run=19
+[59/120] condition=r8_0M run=18
+[60/120] condition=r8_4M run=2
+[61/120] condition=r8_1M run=3
+[62/120] condition=r8_splitMN run=2
+[63/120] condition=r8_2M run=3
+[64/120] condition=r8_1M run=8
+[65/120] condition=r8_3M run=10
+[66/120] condition=r8_splitMN run=20
+[67/120] condition=r8_3M run=5
+[68/120] condition=r8_1M run=13
+[69/120] condition=r8_3M run=19
+[70/120] condition=r8_3M run=18
+[71/120] condition=r8_0M run=14
+[72/120] condition=r8_1M run=10
+[73/120] condition=r8_1M run=1
+[74/120] condition=r8_2M run=4
+[75/120] condition=r8_3M run=15
+[76/120] condition=r8_0M run=19
+[77/120] condition=r8_0M run=5
+[78/120] condition=r8_splitMN run=7
+[79/120] condition=r8_1M run=14
+[80/120] condition=r8_3M run=8
+[81/120] condition=r8_3M run=7
+[82/120] condition=r8_1M run=11
+[83/120] condition=r8_0M run=11
+[84/120] condition=r8_4M run=18
+[85/120] condition=r8_1M run=9
+[86/120] condition=r8_4M run=7
+[87/120] condition=r8_0M run=20
+[88/120] condition=r8_3M run=16
+[89/120] condition=r8_0M run=2
+[90/120] condition=r8_4M run=5
+[91/120] condition=r8_0M run=10
+[92/120] condition=r8_splitMN run=8
+[93/120] condition=r8_splitMN run=15
+[94/120] condition=r8_2M run=9
+[95/120] condition=r8_2M run=13
+[96/120] condition=r8_4M run=3
+[97/120] condition=r8_2M run=6
+[98/120] condition=r8_0M run=12
+[99/120] condition=r8_3M run=11
+[100/120] condition=r8_1M run=16
+[101/120] condition=r8_4M run=4
+[102/120] condition=r8_3M run=9
+[103/120] condition=r8_splitMN run=6
+[104/120] condition=r8_1M run=19
+[105/120] condition=r8_0M run=17
+[106/120] condition=r8_3M run=20
+[107/120] condition=r8_splitMN run=10
+[108/120] condition=r8_1M run=15
+[109/120] condition=r8_4M run=14
+[110/120] condition=r8_4M run=12
+[111/120] condition=r8_0M run=1
+[112/120] condition=r8_splitMN run=9
+[113/120] condition=r8_0M run=7
+[114/120] condition=r8_4M run=8
+[115/120] condition=r8_0M run=9
+[116/120] condition=r8_0M run=6
+[117/120] condition=r8_3M run=6
+[118/120] condition=r8_0M run=3
+[119/120] condition=r8_4M run=19
+[120/120] condition=r8_3M run=12
+
+=== COMPLETE ===
+Runs collected: 120 | tidy rows: 720
+Tidy CSV : /Users/calypsocalcott/LLM_Coordination/Prediction_game/experiment/../results/name_game_prediction_MN_fable_20260709_080819.csv
+Raw JSONL: /Users/calypsocalcott/LLM_Coordination/Prediction_game/experiment/../results/name_game_prediction_MN_fable_20260709_080819.jsonl
+
+Mean round-9 prob_M by condition:
+  r8_0M: prob_M=7 (n=20)
+  r8_1M: prob_M=10 (n=20)
+  r8_2M: prob_M=22 (n=20)
+  r8_3M: prob_M=52 (n=20)
+  r8_4M: prob_M=70 (n=20)
+  r8_splitMN: prob_M=11 (n=20)

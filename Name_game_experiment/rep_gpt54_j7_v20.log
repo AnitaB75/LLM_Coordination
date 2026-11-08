@@ -1,0 +1,188 @@
+
+=== PROVIDER: gpt  MODEL: gpt-5.4  VARIANT: singleM ===
+High-value letter(s) after the shift: M at [20] pts vs J=10 (gap 2x)
+Framing: human (all conditions).  Shift is UNANNOUNCED until it happens.
+10 trials (condition x payoff): j7@20, j7@20, j7@20, j7@20, j7@20, j7@20, j7@20, j7@20, j7@20, j7@20
+
+=== TRIAL 1/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 1/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 2/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 2/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 3/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 3/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 4/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 4/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 5/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 5/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 6/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 6/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 7/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 7/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 8/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 8/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 9/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 9/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== TRIAL 10/10  (j7: 7 J-only + 7 post = 14 rounds, rule update at round 8, M=20 vs J=10) ===
+  R 1 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 2 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 3 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 4 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 5 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 6 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 7 [pre_shift ]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 8 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R 9 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R10 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R11 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R12 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R13 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  R14 [post_shift]: ['J', 'J', 'J', 'J', 'J', 'J'] -> MATCH (10 pts)
+  final scores: [140, 140, 140, 140, 140, 140]
+  saved 10/10 trials -> name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv
+
+=== GPT COMPLETE ===
+Results saved to /Users/calypsocalcott/Desktop/Coordination/LLM_Coordination/Name_game_experiment/results/name_game_entrenchment_singleM_gpt54_j7_v20_20260806_142345.csv

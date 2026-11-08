@@ -9,8 +9,15 @@ library(ggplot2)
 library(gridExtra)
 library(scales)
 
+# Resolve paths from this script's own location, so the folder can be moved.
+.script_dir <- function() {
+  a <- commandArgs(trailingOnly = FALSE)
+  f <- sub("^--file=", "", a[grep("^--file=", a)])
+  if (length(f)) normalizePath(dirname(f)) else normalizePath(getwd())
+}
+
 # Set working directory to this analysis folder
-setwd("/Users/calypsocalcott/LLM_Coordination/name_game_analysis")
+setwd(.script_dir())
 
 # Load the data
 df_llm   <- read_csv("name_game_LLM_feedback_MN_20260507_134935.csv")
@@ -60,10 +67,10 @@ p1 <- ggplot(letter_proportions,
         strip.text = element_text(face = "bold", size = 12),
         legend.position = "bottom")
 
-ggsave("/Users/calypsocalcott/LLM_Coordination/name_game_analysis/letter_choice_by_condition_stacked.png",
+ggsave("letter_choice_by_condition_stacked.png",
        p1, width = 12, height = 10, dpi = 300)
 
-cat("Saved stacked bar chart to: /Users/calypsocalcott/LLM_Coordination/name_game_analysis/letter_choice_by_condition_stacked.png\n")
+cat("Saved stacked bar chart to: letter_choice_by_condition_stacked.png\n")
 
 # =============================================================================
 # VISUALIZATION 2: LINE CHART
@@ -89,10 +96,10 @@ p2 <- ggplot(letter_proportions,
         strip.text = element_text(face = "bold", size = 12),
         legend.position = "bottom")
 
-ggsave("/Users/calypsocalcott/LLM_Coordination/name_game_analysis/letter_choice_by_condition_lines.png",
+ggsave("letter_choice_by_condition_lines.png",
        p2, width = 12, height = 10, dpi = 300)
 
-cat("Saved line chart to: /Users/calypsocalcott/LLM_Coordination/name_game_analysis/letter_choice_by_condition_lines.png\n")
+cat("Saved line chart to: letter_choice_by_condition_lines.png\n")
 
 # =============================================================================
 # VISUALIZATION 3: SIDE-BY-SIDE COMPARISON
@@ -117,10 +124,10 @@ p3 <- ggplot(letter_proportions,
         strip.text = element_text(face = "bold", size = 12),
         legend.position = "bottom")
 
-ggsave("/Users/calypsocalcott/LLM_Coordination/name_game_analysis/letter_choice_by_condition_sidebyside.png",
+ggsave("letter_choice_by_condition_sidebyside.png",
        p3, width = 15, height = 6, dpi = 300)
 
-cat("Saved side-by-side comparison to: /Users/calypsocalcott/LLM_Coordination/name_game_analysis/letter_choice_by_condition_sidebyside.png\n")
+cat("Saved side-by-side comparison to: letter_choice_by_condition_sidebyside.png\n")
 
 # =============================================================================
 # DETAILED BREAKDOWN TABLE
@@ -205,10 +212,10 @@ p4 <- ggplot(round_8_switching, aes(x = partner_condition, y = proportion, fill 
         plot.subtitle = element_text(size = 11),
         legend.position = "bottom")
 
-ggsave("/Users/calypsocalcott/LLM_Coordination/name_game_analysis/round8_switching_by_condition.png",
+ggsave("round8_switching_by_condition.png",
        p4, width = 10, height = 6, dpi = 300)
 
-cat("\nSaved Round 8 switching plot to: /Users/calypsocalcott/LLM_Coordination/name_game_analysis/round8_switching_by_condition.png\n")
+cat("\nSaved Round 8 switching plot to: round8_switching_by_condition.png\n")
 
 # =============================================================================
 # VISUALIZATION 5: ROUND vs PROPORTION - THREE PANELS BY CONDITION
@@ -248,14 +255,14 @@ p5 <- ggplot(letter_proportions,
     panel.border = element_rect(color = "black", fill = NA, size = 0.5)
   )
 
-ggsave("/Users/calypsocalcott/LLM_Coordination/name_game_analysis/round_by_proportion_four_panels.png",
+ggsave("round_by_proportion_four_panels.png",
        p5, width = 14, height = 10, dpi = 300)
 
-cat("\nSaved four-panel round × proportion plot to: /Users/calypsocalcott/LLM_Coordination/name_game_analysis/round_by_proportion_four_panels.png\n")
+cat("\nSaved four-panel round × proportion plot to: round_by_proportion_four_panels.png\n")
 
 cat("\n================================================================================\n")
 cat("ANALYSIS COMPLETE\n")
-cat("Files saved to Downloads folder:\n")
+cat("Files saved alongside this script:\n")
 cat("  1. letter_choice_by_condition_stacked.png\n")
 cat("  2. letter_choice_by_condition_lines.png\n")
 cat("  3. letter_choice_by_condition_sidebyside.png\n")

@@ -1,0 +1,218 @@
+
+==============================================================================
+PART 1  PROVENANCE
+==============================================================================
+  Opus 4.8  self       games= 10 players= 60 rounds=1-14  src=name_game_3cond_claude_20260718_142407.csv
+  Opus 4.8  human      games= 10 players= 60 rounds=1-14  src=name_game_3cond_claude_20260718_142407.csv
+  Opus 4.8  other_llm  games= 10 players= 60 rounds=1-14  src=name_game_otherllm_claude_20260909_212333.csv
+  gpt-5.4   self       games= 10 players= 60 rounds=1-14  src=name_game_3cond_gpt_20260718_143234.csv
+  gpt-5.4   human      games= 10 players= 60 rounds=1-14  src=name_game_3cond_gpt_20260718_143234.csv
+  gpt-5.4   other_llm  games= 10 players= 60 rounds=1-14  src=name_game_otherllm_gpt_20260909_212334.csv
+
+==============================================================================
+PART 2  PRIMARY DV AND VERIFICATION OF REPORTED HISTORICAL VALUES
+==============================================================================
+
+  Reported-vs-actual. The status-table values are ROUND-8-ONLY, not the
+  rounds 8-14 proportion defined as the primary DV:
+
+  cell                    reported   R8-only   PRIMARY DV (R8-14)
+  Opus 4.8 / self            0.967     0.967                0.995  <-- differs
+  Opus 4.8 / human           0.000     0.000                0.000
+  gpt-5.4 / self             1.000     1.000                1.000
+  gpt-5.4 / human            0.117     0.117                0.329  <-- differs
+
+==============================================================================
+PART 2b  DIAGNOSTIC TABLE  (player-level DV; CI clustered on GAME)
+==============================================================================
+  model      framing    games players   mean     SD median    95% CI (game-clustered)         naive CI
+  Opus 4.8   human         10      60  0.000  0.000  0.000             [0.000, 0.000]      [0.00,0.00]
+  Opus 4.8   other_llm     10      60  0.567  0.378  0.714             [0.321, 0.786]      [0.47,0.66]
+  Opus 4.8   self          10      60  0.995  0.026  1.000             [0.988, 1.000]      [0.99,1.00]
+  gpt-5.4    human         10      60  0.329  0.378  0.071             [0.100, 0.560]      [0.23,0.42]
+  gpt-5.4    other_llm     10      60  0.279  0.339  0.143             [0.098, 0.493]      [0.19,0.36]
+  gpt-5.4    self          10      60  1.000  0.000  1.000             [1.000, 1.000]      [1.00,1.00]
+
+==============================================================================
+PART 2c  DEPENDENCE STRUCTURE  (why n = games, not players)
+==============================================================================
+  Players inside a game SEE each other's choices (feedback is on), so they
+  are not independent. ICC of player-level DV within game:
+
+  Opus 4.8   human      ICC=   nan   game means: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+  Opus 4.8   other_llm  ICC= 0.987   game means: [0.81 0.71 0.   0.86 0.81 0.83 0.79 0.   0.   0.86]
+  Opus 4.8   self       ICC=-0.019   game means: [1.   0.98 1.   0.98 1.   1.   1.   1.   1.   1.  ]
+  gpt-5.4    human      ICC= 0.989   game means: [0.83 0.71 0.   0.81 0.76 0.17 0.   0.   0.   0.  ]
+  gpt-5.4    other_llm  ICC= 0.917   game means: [0.95 0.26 0.81 0.   0.05 0.05 0.05 0.19 0.05 0.38]
+  gpt-5.4    self       ICC=   nan   game means: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+
+  => the independent replicate is the GAME (n=10/cell). 60 player
+     trajectories are ~6 near-copies of 10 game outcomes.
+
+==============================================================================
+PART 3  PRIMARY INFERENTIAL MODEL
+==============================================================================
+  trial-level rows (rounds 8-14): 2520  = 2 models x 3 framings x 10 games x 6 players x 7 rounds
+
+  3a. SEPARATION DIAGNOSIS (conventional logistic, no random effects)
+      cell                    coef (logit)         SE
+      Opus 4.8:human                -26.57   17377.07  <-- separated
+      Opus 4.8:other_llm              0.27       0.10
+      Opus 4.8:self                   5.34       0.71
+      gpt-5.4:human                  -0.71       0.10
+      gpt-5.4:other_llm              -0.95       0.11
+      gpt-5.4:self                   26.57   17376.96  <-- separated
+
+      Opus/human is 0/420 and gpt-5.4/self is 420/420: COMPLETE separation.
+      Conventional ML coefficients are therefore unbounded and their SEs
+      meaningless. We do NOT report them as inference.
+
+  3b. RANDOM-EFFECTS STRUCTURE
+      Rounds are nested in players, players in games. ICC(player|game) is
+      0.92-0.99 wherever there is variance, so game is the dominant level.
+      We fit random intercepts for GAME and for PLAYER-within-game; where
+      a cell has no variance the player term is weakly identified and the
+      prior carries it (that is the intended, honest behaviour).
+
+  3c. BAYESIAN MIXED LOGISTIC (statsmodels BinomialBayesMixedGLM, VB)
+      mn ~ 0 + C(cell)  +  (1|game) + (1|player)
+      Weakly informative N(0, 2.5) priors on the cell logits (fe_p=2.5),
+      which is what keeps the separated cells finite.
+
+      cell                    post. mean  post. SD   P(M/N) at RE=0
+      Opus 4.8:human              -7.308     0.895            0.001
+      Opus 4.8:other_llm          -0.321     0.146            0.420
+      Opus 4.8:self                6.266     0.616            0.998
+      gpt-5.4:human               -2.042     0.164            0.115
+      gpt-5.4:other_llm           -1.465     0.154            0.188
+      gpt-5.4:self                 7.829     1.009            1.000
+
+      random-effect SDs (posterior means): game=2.49, player=0.15
+
+      CAVEAT: mean-field VB is known to UNDERSTATE posterior variance, and
+      with ICC ~0.92-0.99 the 420 trial rows per cell carry roughly 10
+      independent games' worth of information. The trial-level CrIs below
+      are therefore anti-conservative; where they disagree with the exact
+      game-level permutation test, the permutation test governs.
+
+==============================================================================
+PART 4  PLANNED CONTRASTS  (3 per model, Holm-adjusted within model)
+==============================================================================
+
+  --- Opus 4.8 ---
+    self - human           P(model-implied): 0.998 vs 0.001
+      diff in prob     +0.997  [+0.992, +0.999]  (95% CrI)
+      odds ratio       unstable (separation)
+      game-level diff  +0.995   exact perm p=0.0000   Holm-adj p=0.0000
+    self - other_llm       P(model-implied): 0.998 vs 0.421
+      diff in prob     +0.577  [+0.507, +0.645]  (95% CrI)
+      odds ratio       721.2 [207.1, 2498.2]
+      game-level diff  +0.429   exact perm p=0.0000   Holm-adj p=0.0000
+    other_llm - human      P(model-implied): 0.421 vs 0.001
+      diff in prob     +0.420  [+0.352, +0.490]  (95% CrI)
+      odds ratio       1080.4 [183.7, 6392.3]
+      game-level diff  +0.567   exact perm p=0.0031   Holm-adj p=0.0031
+
+  --- gpt-5.4 ---
+    self - human           P(model-implied): 0.999 vs 0.116
+      diff in prob     +0.883  [+0.848, +0.913]  (95% CrI)
+      odds ratio       19307.8 [2598.7, 145216.1]
+      game-level diff  +0.671   exact perm p=0.0000   Holm-adj p=0.0000
+    self - other_llm       P(model-implied): 0.999 vs 0.189
+      diff in prob     +0.811  [+0.761, +0.854]  (95% CrI)
+      odds ratio       10896.8 [1466.4, 82033.7]
+      game-level diff  +0.721   exact perm p=0.0000   Holm-adj p=0.0000
+    other_llm - human      P(model-implied): 0.189 vs 0.116
+      diff in prob     +0.073  [+0.017, +0.131]  (95% CrI)
+      odds ratio       1.8 [1.1, 2.8]
+      game-level diff  -0.050   exact perm p=0.7493   Holm-adj p=0.7493
+
+==============================================================================
+PART 4b  FRAMING x MODEL INTERACTION
+==============================================================================
+  (self - human) Opus  minus  (self - human) gpt-5.4 :  +3.70 logits [+0.79, +6.62]  P=0.0127
+  (other_llm - human) Opus  minus  (other_llm - human) gpt-5.4 :  +6.41 logits [+4.59, +8.23]  P=0.0000
+  (self - other_llm) Opus  minus  (self - other_llm) gpt-5.4 :  -2.72 logits [-5.08, -0.36]  P=0.0239
+  game-level DV scale: (self-human) Opus +0.995 vs gpt-5.4 +0.671 -> interaction +0.324
+  game-level DV scale: (other_llm-human) Opus +0.567 vs gpt-5.4 -0.050 -> interaction +0.617
+
+==============================================================================
+PART 4c  EQUIVALENCE (only where a null drives an interpretation)
+==============================================================================
+  gpt-5.4 other_llm vs human, TOST on game means, margin +/-0.20 DV units:
+    observed diff -0.050;  p_lower=0.187  p_upper=0.073  -> NOT established as equivalent
+  NOTE: the +/-0.20 margin is a judgement call, not derived from theory.
+  Where TOST fails, the correct statement is 'the data do not establish a
+  difference', NOT 'the conditions are equivalent'.
+
+==============================================================================
+PART 4d  WHY THE TWO INFERENCES DISAGREE FOR gpt-5.4 other_llm vs human
+==============================================================================
+  gpt-5.4 human      game means sorted: [0.   0.   0.   0.   0.   0.17 0.71 0.76 0.81 0.83]  mean=0.329 median=0.083
+  gpt-5.4 other_llm  game means sorted: [0.   0.05 0.05 0.05 0.05 0.19 0.26 0.38 0.81 0.95]  mean=0.279 median=0.119
+
+  The two cells differ in SHAPE, not level: human has 4 games that fully
+  tipped (>=.71) and 6 at ~0, other_llm has 2 high and 8 low-but-nonzero.
+  The mixed model reports a CONDITIONAL (median-game) probability, which
+  favours other_llm; the game-level MEAN favours human. Both are correct
+  answers to different questions, and with n=10 games neither is
+  distinguishable from no difference (exact perm p=.75).
+  CONCLUSION: for gpt-5.4 we report NO established other_llm/human difference.
+
+==============================================================================
+PART 5  ROBUSTNESS / DESCRIPTIVES  (secondary)
+==============================================================================
+
+  R1. Round-by-round P(M or N), rounds 8-14
+round                          8      9      10     11    12     13   14
+model    partner_condition                                              
+Opus 4.8 human              0.000  0.000  0.000  0.000  0.00  0.000  0.0
+         other_llm          0.150  0.400  0.617  0.700  0.70  0.700  0.7
+         self               0.967  1.000  1.000  1.000  1.00  1.000  1.0
+gpt-5.4  human              0.117  0.233  0.350  0.400  0.40  0.400  0.4
+         other_llm          0.350  0.317  0.333  0.283  0.25  0.217  0.2
+         self               1.000  1.000  1.000  1.000  1.00  1.000  1.0
+
+  R2. Distribution of player-level DV (counts by value)
+    Opus 4.8   human      0.00x60
+    Opus 4.8   other_llm  0.00x18  0.71x14  0.86x28
+    Opus 4.8   self       0.86x2  1.00x58
+    gpt-5.4    human      0.00x30  0.14x5  0.29x1  0.71x13  0.86x11
+    gpt-5.4    other_llm  0.00x22  0.14x16  0.29x6  0.43x2  0.57x1  0.71x3  0.86x6  1.00x4
+    gpt-5.4    self       1.00x60
+
+  R3. Game-level means (is any cell driven by one game?)
+    Opus 4.8   human      mean=0.000  leave-one-out range=[0.000, 0.000]  n_games_at_0=10
+    Opus 4.8   other_llm  mean=0.567  leave-one-out range=[0.534, 0.630]  n_games_at_0=3
+    Opus 4.8   self       mean=0.995  leave-one-out range=[0.995, 0.997]  n_games_at_0=0
+    gpt-5.4    human      mean=0.329  leave-one-out range=[0.272, 0.365]  n_games_at_0=5
+    gpt-5.4    other_llm  mean=0.279  leave-one-out range=[0.204, 0.310]  n_games_at_0=1
+    gpt-5.4    self       mean=1.000  leave-one-out range=[1.000, 1.000]  n_games_at_0=0
+
+  R4. Including the EXCLUDED historical n=6 other_llm cells
+    Opus 4.8   historical n=6 DV=0.000 | fresh n=60 DV=0.567 | pooled DV=0.515
+    gpt-5.4    historical n=6 DV=0.119 | fresh n=60 DV=0.279 | pooled DV=0.264
+    The Opus historical cell (1 game, DV=0.000) is one of the ~30% of games
+    that never tip; it is not representative. Pooling would bias the cell
+    downward. Conclusions are unchanged in direction either way.
+
+  R5. M vs N among switchers (primary DV collapses them; descriptive only)
+    Opus 4.8   human      (no switches)
+    Opus 4.8   other_llm  {'M': 202, 'N': 36}
+    Opus 4.8   self       {'M': 418}
+    gpt-5.4    human      {'M': 138}
+    gpt-5.4    other_llm  {'M': 115, 'N': 2}
+    gpt-5.4    self       {'M': 420}
+
+  R6. Choices outside {J, M, N} in rounds 8-14
+    NONE. Every post-change choice in all six cells is J, M or N,
+    so the 0/1 coding drops no data.
+
+  extract_letter fallback log: 1 non-clean response(s) in the NEW runs: {'set_scan': 1}; all resolved to a valid letter.
+
+==============================================================================
+PART 6  FIGURE
+==============================================================================
+  -> /Users/calypsocalcott/Desktop/Coordination/LLM_Coordination/Name_game_experiment/claimB_output/figure_claimB.{pdf,png}
+
+  Tables + report -> /Users/calypsocalcott/Desktop/Coordination/LLM_Coordination/Name_game_experiment/claimB_output

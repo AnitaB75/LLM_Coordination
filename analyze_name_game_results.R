@@ -1,9 +1,16 @@
+# Path resolves from this script's own location, so the project can be moved.
+.script_dir <- function() {
+  a <- commandArgs(trailingOnly = FALSE)
+  f <- sub("^--file=", "", a[grep("^--file=", a)])
+  if (length(f)) normalizePath(dirname(f)) else normalizePath(getwd())
+}
+
 library(tidyverse)
 library(ggplot2)
 library(scales)
 library(gridExtra)
 
-setwd("/Users/calypsocalcott/LLM_Coordination")
+setwd(.script_dir())
 
 # Load data (combine LLM-only and human-condition runs)
 df_llm   <- read_csv("results/name_game_LLM_feedback_MN_20260507_134935.csv",

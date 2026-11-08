@@ -1,0 +1,35 @@
+model,model_id,stimulus_pair,family,manipulation,source,identity_1,identity_2,n_valid,modal_identity,modal_share,match_unbiased,match_plugin,entropy_bits,p_left,n_modal_shown_left,n_modal_shown_right,p_modal_given_modal_left,p_modal_given_modal_right,form_consistency,rationale_mentions_position,n_AB,n_BA,ci_lo,ci_hi,n_parse_retry,n_api_error
+gpt,gpt-5.4,a_chev_ud,A_semantic,chevron pointing up vs down,targeted,up,down,60,up,0.6667,0.548,0.5556,0.9183,0.3333,30,30,0.5,0.8333,0.6667,0.0,30,30,0.4966,0.6548,0,0
+gpt,gpt-5.4,b_spiral_cw,B_glyph,clockwise vs counter-clockwise spiral,targeted,cw,ccw,60,ccw,0.8833,0.7904,0.7939,0.5197,0.45,30,30,0.8333,0.9333,0.9,0.3,30,30,0.6746,0.9034,0,0
+gpt,gpt-5.4,b_tee_ell,B_glyph,T-glyph vs L-glyph,targeted,tee,ell,60,tee,1.0,1.0,1.0,-0.0,0.5,30,30,1.0,1.0,1.0,0.0,30,30,1.0,1.0,0,0
+gpt,gpt-5.4,c_contr_subtle,C_contrast,light vs mid-grey disc,targeted,light,midgrey,60,midgrey,0.95,0.9034,0.905,0.2864,0.55,30,30,1.0,0.9,0.9,0.15,30,30,0.7904,1.0,0,0
+gpt,gpt-5.4,c_open_cplx,compete,closure/complexity,step1b_screen,open_simple,closed_cplx,60,closed_cplx,0.65,0.5373,0.545,0.9341,0.2167,30,30,0.3667,0.9333,0.4333,0.0,30,30,0.4938,0.6362,0,0
+gpt,gpt-5.4,d_dens_extreme,D_density,4 vs 60 dots,targeted,sparse,dense,60,sparse,0.9667,0.9345,0.9356,0.2108,0.4667,30,30,0.9333,1.0,0.9333,0.0,30,30,0.8446,1.0,0,0
+gpt,gpt-5.4,d_dens_subtle,D_density,12 vs 20 dots,targeted,sparse,dense,60,dense,0.7333,0.6023,0.6089,0.8366,0.2667,30,30,0.5,0.9667,0.5333,0.0,30,30,0.5192,0.7407,0,0
+gpt,gpt-5.4,d_eq_ink,D_density,"equal total ink, few large vs many small",targeted,few_large,many_small,60,few_large,0.8333,0.7175,0.7222,0.65,0.4,30,30,0.7333,0.9333,0.8,0.0,30,30,0.6023,0.8446,0,0
+gpt,gpt-5.4,d_texture,D_density,fine vs coarse stipple in a fixed disc,targeted,fine,coarse,60,coarse,0.95,0.9034,0.905,0.2864,0.5167,30,30,0.9667,0.9333,0.9667,0.0167,30,30,0.7904,1.0,0,0
+gpt,gpt-5.4,mirror,step1_original,,step1,blob,blob-mirror,60,blob-mirror,0.6833,0.5599,0.5672,0.9007,0.8167,30,30,1.0,0.3667,0.3667,0.8833,30,30,0.5006,0.6746,0,0
+gpt,gpt-5.4,noise,step1_original,,step1,noise-A,noise-B,60,noise-B,0.75,0.6186,0.625,0.8113,0.3833,30,30,0.6333,0.8667,0.7667,0.2167,30,30,0.5277,0.7407,0,0
+gpt,gpt-5.4,proto,step1_original,,step1,circle,square,60,circle,1.0,1.0,1.0,-0.0,0.5,30,30,1.0,1.0,1.0,0.0,30,30,1.0,1.0,0,0
+gpt,gpt-5.4,rot,step1_original,,step1,blob,blob-rot90,60,blob-rot90,0.7833,0.6548,0.6606,0.754,0.5167,30,30,0.8,0.7667,0.9667,0.0167,30,30,0.548,0.7904,0,0
+gpt,gpt-5.4,s_arrow,single,semantic orientation,step1b_screen,up,right,60,up,0.7333,0.6023,0.6089,0.8366,0.3,30,30,0.5333,0.9333,0.6,0.2667,30,30,0.5192,0.7175,0,0
+gpt,gpt-5.4,s_contrast,single,contrast,step1b_screen,light,dark,60,dark,1.0,1.0,1.0,-0.0,0.5,30,30,1.0,1.0,1.0,0.0,30,30,1.0,1.0,0,0
+gpt,gpt-5.4,s_convexity,single,convexity,step1b_screen,convex,concave,60,concave,0.85,0.7407,0.745,0.6098,0.35,30,30,0.7,1.0,0.7,0.0,30,30,0.6186,0.8734,0,0
+gpt,gpt-5.4,s_density,single,density,step1b_screen,sparse,dense,60,sparse,0.95,0.9034,0.905,0.2864,0.45,30,30,0.9,1.0,0.9,0.0,30,30,0.7904,1.0,0,0
+claude,claude-opus-4-8,a_chev_ud,A_semantic,chevron pointing up vs down,targeted,up,down,60,up,1.0,1.0,1.0,-0.0,0.5,30,30,1.0,1.0,1.0,0.3,30,30,1.0,1.0,0,0
+claude,claude-opus-4-8,b_spiral_cw,B_glyph,clockwise vs counter-clockwise spiral,targeted,cw,ccw,60,ccw,0.9833,0.9667,0.9672,0.1223,0.5167,30,30,1.0,0.9667,0.9667,0.3833,30,30,0.9034,1.0,0,0
+claude,claude-opus-4-8,b_tee_ell,B_glyph,T-glyph vs L-glyph,targeted,tee,ell,60,tee,0.6333,0.5277,0.5356,0.9481,0.8667,30,30,1.0,0.2667,0.2667,0.5167,30,30,0.4921,0.6186,0,0
+claude,claude-opus-4-8,c_contr_subtle,C_contrast,light vs mid-grey disc,targeted,light,midgrey,60,light,0.5333,0.4938,0.5022,0.9968,0.9667,30,30,1.0,0.0667,0.0667,0.05,30,30,0.4915,0.548,0,0
+claude,claude-opus-4-8,c_open_cplx,compete,closure/complexity,step1b_screen,open_simple,closed_cplx,60,closed_cplx,0.8833,0.7904,0.7939,0.5197,0.3833,30,30,0.7667,1.0,0.7667,0.05,30,30,0.6746,0.9034,0,0
+claude,claude-opus-4-8,d_dens_extreme,D_density,4 vs 60 dots,targeted,sparse,dense,60,sparse,0.7333,0.6023,0.6089,0.8366,0.4,30,30,0.6333,0.8333,0.8,0.0667,30,30,0.5192,0.7175,0,0
+claude,claude-opus-4-8,d_dens_subtle,D_density,12 vs 20 dots,targeted,sparse,dense,60,dense,0.9833,0.9667,0.9672,0.1223,0.5167,30,30,1.0,0.9667,0.9667,0.25,30,30,0.9034,1.0,0,0
+claude,claude-opus-4-8,d_eq_ink,D_density,"equal total ink, few large vs many small",targeted,few_large,many_small,60,few_large,0.8667,0.765,0.7689,0.5665,0.3667,30,30,0.7333,1.0,0.7333,0.0167,30,30,0.6362,0.9034,0,0
+claude,claude-opus-4-8,d_texture,D_density,fine vs coarse stipple in a fixed disc,targeted,fine,coarse,60,coarse,0.6333,0.5277,0.5356,0.9481,0.1333,30,30,0.2667,1.0,0.2667,0.2,30,30,0.4921,0.6186,0,0
+claude,claude-opus-4-8,mirror,step1_original,,step1,blob,blob-mirror,60,blob-mirror,0.7667,0.6362,0.6422,0.7838,0.6333,30,30,0.9,0.6333,0.7333,0.6667,30,30,0.5373,0.765,0,0
+claude,claude-opus-4-8,noise,step1_original,,step1,noise-A,noise-B,60,noise-B,0.5,0.4915,0.5,1.0,0.9333,30,30,0.9333,0.0667,0.1333,0.3,30,30,0.4915,0.5373,0,0
+claude,claude-opus-4-8,proto,step1_original,,step1,circle,square,60,circle,1.0,1.0,1.0,-0.0,0.5,30,30,1.0,1.0,1.0,0.4667,30,30,1.0,1.0,0,0
+claude,claude-opus-4-8,rot,step1_original,,step1,blob,blob-rot90,60,blob-rot90,0.8333,0.7175,0.7222,0.65,0.6,30,30,0.9333,0.7333,0.8,0.85,30,30,0.6023,0.8446,0,0
+claude,claude-opus-4-8,s_arrow,single,semantic orientation,step1b_screen,up,right,60,up,0.9833,0.9667,0.9672,0.1223,0.4833,30,30,0.9667,1.0,0.9667,0.3333,30,30,0.9034,1.0,0,0
+claude,claude-opus-4-8,s_contrast,single,contrast,step1b_screen,light,dark,60,dark,0.9167,0.8446,0.8472,0.4138,0.5167,30,30,0.9333,0.9,0.9667,0.05,30,30,0.7407,0.9667,0,0
+claude,claude-opus-4-8,s_convexity,single,convexity,step1b_screen,convex,concave,60,concave,1.0,1.0,1.0,-0.0,0.5,30,30,1.0,1.0,1.0,0.1667,30,30,1.0,1.0,0,0
+claude,claude-opus-4-8,s_density,single,density,step1b_screen,sparse,dense,60,sparse,0.7833,0.6548,0.6606,0.754,0.5167,30,30,0.8,0.7667,0.9667,0.1667,30,30,0.548,0.7904,0,0
